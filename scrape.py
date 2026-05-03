@@ -256,6 +256,29 @@ def send_telegram(token: str, chat_id: str, text: str) -> None:
         print(f"  telegram error {r.status_code}: {r.text[:200]}")
 
 
+def update_google_sheet(data: dict) -> None:
+    url = os.environ.get("GOOGLE_SHEETS_WEBAPP_URL")
+    secret = os.environ.get("GOOGLE_SHEETS_SECRET")
+    if not (url and secret):
+        return
+    payload = {
+        "secret": secret,
+        "updated_at": data["updated_at"],
+        "races": data["races"],
+    }
+    try:
+        # Apps Script web apps may 302-redirect to googleusercontent.com; requests
+        # follows it (downgrades to GET) but the original POST has already been
+        # processed by the script before the redirect.
+        r = requests.post(url, json=payload, timeout=30)
+        if 200 <= r.status_code < 300:
+            print(f"Google Sheet updated: {r.text[:120]}")
+        else:
+            print(f"Google Sheet error {r.status_code}: {r.text[:200]}")
+    except Exception as e:
+        print(f"Google Sheet exception: {e}")
+
+
 def main() -> int:
     out = collect()
 
@@ -283,6 +306,8 @@ def main() -> int:
             print("  TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set; skipping notifications")
     else:
         print("\nNo changes since last run.")
+
+    update_google_sheet(out)
 
     state_path.write_text(json.dumps(out, indent=2, sort_keys=True))
     data_path.write_text(json.dumps(out, indent=2, sort_keys=True))

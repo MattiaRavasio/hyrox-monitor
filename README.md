@@ -45,7 +45,21 @@ Add two:
 Repo → Settings → Pages → **Source: Deploy from a branch** → Branch: `main` / `(root)` → Save.
 The dashboard will be live at `https://mattiaravasio.github.io/hyrox-monitor/`.
 
-### 4. First run
+### 4. Google Sheets (optional)
+
+1. Open the Google Sheet you want to use.
+2. Extensions → Apps Script. Replace `Code.gs` with the contents of [`apps_script.gs`](./apps_script.gs).
+3. Project Settings → **Script properties** → add `SHARED_SECRET` = any random string (e.g. `openssl rand -hex 16`).
+4. Deploy → **New deployment** → Type: Web app → Execute as: **Me** → Who has access: **Anyone** → Deploy.
+   Copy the Web App URL.
+5. Add two more GitHub Actions secrets:
+   - `GOOGLE_SHEETS_WEBAPP_URL` — the Web App URL
+   - `GOOGLE_SHEETS_SECRET` — same string as `SHARED_SECRET` above
+
+If these secrets aren't set, the scraper just skips the Sheets step. The Sheet is overwritten
+on every run with the current state of all favorites.
+
+### 5. First run
 
 Either wait for the next hour, or trigger manually:
 

@@ -30,6 +30,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GOOGLE_SHEETS_WEBAPP_URL: ${{ secrets.GOOGLE_SHEETS_WEBAPP_URL }}
+          GOOGLE_SHEETS_SECRET: ${{ secrets.GOOGLE_SHEETS_SECRET }}
         run: python scrape.py
 
       - name: Commit data.json and state.json if changed
