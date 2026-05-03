@@ -7,21 +7,41 @@
   <style>
     :root {
       --bg: #0e1014; --fg: #e6e8ee; --muted: #9aa0aa;
-      --card: #1a1d24; --border: #2a2e36;
+      --card: #1a1d24; --border: #2a2e36; --input: #14171c;
       --accent: #00d97a; --warn: #f59e0b; --bad: #ef4444; --link: #79b8ff;
+      --star-on: #f5c518; --star-off: #4a4f59;
     }
     @media (prefers-color-scheme: light) {
-      :root { --bg:#f7f7fb; --fg:#1a1d24; --muted:#5a606a; --card:#ffffff; --border:#e1e4ea; --link:#0066cc; }
+      :root { --bg:#f7f7fb; --fg:#1a1d24; --muted:#5a606a; --card:#ffffff; --border:#e1e4ea; --input:#ffffff; --link:#0066cc; --star-off:#bbb; }
     }
     * { box-sizing: border-box; }
     body {
       margin: 0; font: 15px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      color: var(--fg); background: var(--bg); padding: 1rem; max-width: 720px; margin: 0 auto;
+      color: var(--fg); background: var(--bg); padding: 1rem; max-width: 760px; margin: 0 auto;
     }
     h1 { font-size: 1.4rem; margin: 0.5rem 0 0; }
-    .meta { color: var(--muted); font-size: 0.85rem; margin: 0.25rem 0 1rem; }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; margin-bottom: 0.75rem; }
-    .card h2 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .meta { color: var(--muted); font-size: 0.85rem; margin: 0.25rem 0 0.75rem; }
+    .controls { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .controls input[type="search"] {
+      flex: 1; min-width: 200px; padding: 0.55rem 0.75rem; font-size: 0.95rem;
+      background: var(--input); color: var(--fg); border: 1px solid var(--border); border-radius: 8px;
+    }
+    .controls label { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.55rem 0.75rem; background: var(--card); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 0.9rem; user-select: none; }
+    .controls label input { margin: 0; }
+    .section-label { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin: 1rem 0 0.5rem; padding-left: 0.25rem; }
+
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 0.85rem 1rem; margin-bottom: 0.6rem; position: relative; }
+    .card.full { padding: 1rem; }
+    .card-head { display: flex; align-items: flex-start; gap: 0.6rem; }
+    .star {
+      flex: 0 0 auto; cursor: pointer; font-size: 1.3rem; line-height: 1;
+      color: var(--star-off); background: none; border: none; padding: 0; margin-top: 0.1rem;
+      transition: color 0.15s, transform 0.1s;
+    }
+    .star:hover { transform: scale(1.15); }
+    .star.on { color: var(--star-on); }
+    .card h2 { margin: 0 0 0.25rem; font-size: 1.05rem; flex: 1; min-width: 0; }
+    .city { color: var(--muted); font-size: 0.8rem; font-weight: 500; }
     .row { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin: 0.3rem 0; }
     .row .label { color: var(--muted); font-size: 0.85rem; }
     .row .value { font-size: 0.9rem; text-align: right; }
@@ -30,82 +50,192 @@
     .badge.pending { background: var(--warn); color: #1a1208; }
     .badge.unknown { background: var(--border); color: var(--muted); }
     .badge.bad { background: var(--bad); color: #fff; }
+    .compact-meta { color: var(--muted); font-size: 0.85rem; }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .err { color: var(--bad); font-size: 0.85rem; margin-top: 0.4rem; }
     .empty { color: var(--muted); padding: 2rem 1rem; text-align: center; }
+    .footnote { color: var(--muted); font-size: 0.8rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+    .footnote code { background: var(--input); padding: 0.05rem 0.3rem; border-radius: 4px; font-size: 0.8rem; }
   </style>
 </head>
 <body>
   <h1>HYROX Ticket Monitor</h1>
   <div class="meta" id="meta">Loading…</div>
+
+  <div class="controls">
+    <input type="search" id="search" placeholder="Search by city or name…" autocomplete="off" />
+    <label><input type="checkbox" id="favOnly" /> ★ favorites only</label>
+  </div>
+
   <div id="cards"></div>
+
+  <div class="footnote">
+    ★ in the dashboard sorts a race to the top on this device (saved in your browser).
+    Telegram notifications and full ticket-shop tracking are driven by
+    <code>config.json</code> in the repo — edit that to add a race to those.
+  </div>
+
   <script>
+    const STORAGE_KEY = 'hyrox_favorites_v1';
     const daysFromNow = (iso) => {
       if (!iso) return null;
-      const ms = new Date(iso) - new Date();
-      return Math.ceil(ms / (1000 * 60 * 60 * 24));
+      return Math.ceil((new Date(iso) - new Date()) / (1000 * 60 * 60 * 24));
     };
     const escape = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+    const loadFavSet = (data) => {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) { try { return new Set(JSON.parse(stored)); } catch (_) {} }
+      // Seed from server-side favorites on first visit
+      return new Set((data.races || []).filter(r => r.is_favorite).map(r => r.slug));
+    };
+    const saveFavSet = (set) => {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]));
+    };
+
+    const statusBadgeFull = (r) => {
+      const dropDays = daysFromNow(r.sell_start);
+      switch (r.status) {
+        case 'on_sale': return '<span class="badge on">ON SALE</span>';
+        case 'planned': return (dropDays !== null && dropDays > 0)
+          ? `<span class="badge pending">DROPS IN ${dropDays}d</span>`
+          : '<span class="badge pending">PRE-SALE</span>';
+        case 'imminent': return '<span class="badge pending">IMMINENT</span>';
+        case 'ended': return '<span class="badge bad">SALES ENDED</span>';
+        default: return '<span class="badge pending">PENDING</span>';
+      }
+    };
+    const statusBadgeCompact = (r) => {
+      if (r.on_sale_button) return '<span class="badge on">BUY TICKETS</span>';
+      return '<span class="badge pending">PENDING</span>';
+    };
+    const mensOpenBadge = (r) => {
+      if (r.mens_open_buyable === true) return '<span class="badge on">AVAILABLE</span>';
+      if (r.status === 'on_sale' && r.mens_open_exists && !r.mens_open_active) return '<span class="badge bad">SOLD OUT</span>';
+      return '<span class="badge unknown">—</span>';
+    };
+
+    const renderCardFull = (r, isFav) => {
+      const closeDays = daysFromNow(r.sell_end);
+      const dropDays = daysFromNow(r.sell_start);
+      const buyUrl = r.vivenu_url || r.link;
+      let html = `
+        <div class="card-head">
+          <button class="star ${isFav ? 'on' : ''}" data-slug="${escape(r.slug)}" title="Toggle favorite">${isFav ? '★' : '☆'}</button>
+          <div style="flex:1; min-width:0">
+            <h2>${escape(r.title || r.label || r.slug)}</h2>
+            <div class="city">${escape(r.city_code || '')}${r.race_dates ? ' · ' + escape(r.race_dates) : ''}</div>
+          </div>
+        </div>
+        <div class="row"><span class="label">Status</span><span class="value">${statusBadgeFull(r)}</span></div>`;
+      if (r.status === 'planned' && dropDays !== null && dropDays > 0) {
+        html += `<div class="row"><span class="label">Tickets drop in</span><span class="value">${dropDays} day${dropDays===1?'':'s'}</span></div>`;
+      }
+      if (r.status === 'on_sale' && closeDays !== null && closeDays > 0) {
+        html += `<div class="row"><span class="label">Sales close in</span><span class="value">${closeDays} day${closeDays===1?'':'s'}</span></div>`;
+      }
+      html += `<div class="row"><span class="label">Men's Open</span><span class="value">${mensOpenBadge(r)}</span></div>`;
+      if (buyUrl) html += `<div class="row"><span class="label"></span><span class="value"><a href="${escape(buyUrl)}" target="_blank" rel="noopener">${r.vivenu_url ? 'Buy tickets' : 'Race page'} →</a></span></div>`;
+      if (r.error) html += `<div class="err">Error: ${escape(r.error)}</div>`;
+      return html;
+    };
+
+    const renderCardCompact = (r, isFav) => {
+      const buyUrl = r.link;
+      return `
+        <div class="card-head">
+          <button class="star ${isFav ? 'on' : ''}" data-slug="${escape(r.slug)}" title="Toggle favorite">${isFav ? '★' : '☆'}</button>
+          <div style="flex:1; min-width:0">
+            <h2>${escape(r.title || r.slug)}</h2>
+            <div class="city">${escape(r.city_code || '')}${r.race_dates ? ' · ' + escape(r.race_dates) : ''}</div>
+          </div>
+          <div>${statusBadgeCompact(r)}</div>
+        </div>
+        ${buyUrl ? `<div class="row" style="margin-top:0.5rem"><span class="label"></span><span class="value"><a href="${escape(buyUrl)}" target="_blank" rel="noopener">Race page →</a></span></div>` : ''}
+      `;
+    };
+
+    let DATA = null;
+    let FAVS = null;
+
+    const render = () => {
+      const root = document.getElementById('cards');
+      root.innerHTML = '';
+      const q = (document.getElementById('search').value || '').trim().toLowerCase();
+      const favOnly = document.getElementById('favOnly').checked;
+
+      const races = (DATA.races || []).filter(r => {
+        if (favOnly && !FAVS.has(r.slug)) return false;
+        if (q) {
+          const hay = ((r.title || '') + ' ' + (r.label || '') + ' ' + (r.city_code || '') + ' ' + (r.slug || '')).toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      // Sort: favorites first; within each group, by upcoming race date ascending; past races last
+      const today = new Date(); today.setHours(0,0,0,0);
+      const sortKey = (r) => {
+        const d = r.race_date_start_iso ? new Date(r.race_date_start_iso) : null;
+        // Past races sort to the end
+        const pastPenalty = (d && d < today) ? 1 : 0;
+        return [pastPenalty, d ? d.getTime() : Number.MAX_SAFE_INTEGER];
+      };
+      const cmp = (a, b) => {
+        const af = FAVS.has(a.slug), bf = FAVS.has(b.slug);
+        if (af !== bf) return af ? -1 : 1;
+        const ka = sortKey(a), kb = sortKey(b);
+        if (ka[0] !== kb[0]) return ka[0] - kb[0];
+        return ka[1] - kb[1];
+      };
+      races.sort(cmp);
+
+      if (!races.length) {
+        root.innerHTML = '<div class="empty">No races match.</div>';
+        return;
+      }
+
+      // Section labels: separate favorites and others
+      let lastSection = null;
+      for (const r of races) {
+        const isFav = FAVS.has(r.slug);
+        const section = isFav ? 'fav' : 'other';
+        if (section !== lastSection && !favOnly) {
+          const label = document.createElement('div');
+          label.className = 'section-label';
+          label.textContent = isFav ? `★ Favorites (${races.filter(x => FAVS.has(x.slug)).length})` : `All races (${races.filter(x => !FAVS.has(x.slug)).length})`;
+          root.appendChild(label);
+          lastSection = section;
+        }
+        const card = document.createElement('div');
+        const isTracked = r.is_favorite || r.status; // server-side fully tracked race
+        card.className = 'card' + (isTracked ? ' full' : '');
+        card.innerHTML = isTracked ? renderCardFull(r, isFav) : renderCardCompact(r, isFav);
+        root.appendChild(card);
+      }
+    };
 
     fetch('./data.json?ts=' + Date.now())
       .then(r => r.ok ? r.json() : Promise.reject(new Error('HTTP ' + r.status)))
       .then(data => {
-        const meta = document.getElementById('meta');
+        DATA = data;
+        FAVS = loadFavSet(data);
         const updated = new Date(data.updated_at);
-        meta.textContent = `Updated ${updated.toLocaleString()} · ${data.races.length} favorites · ${data.total_races_on_site} total races on hyrox.com`;
+        document.getElementById('meta').textContent =
+          `Updated ${updated.toLocaleString()} · ${data.races.length} races · ${data.favorites_count || 0} fully tracked`;
 
-        const root = document.getElementById('cards');
-        if (!data.races.length) {
-          root.innerHTML = '<div class="empty">No favorites configured.</div>';
-          return;
-        }
-        for (const r of data.races) {
-          const card = document.createElement('div');
-          card.className = 'card';
-          const title = r.title || r.label;
-          const dropDays = daysFromNow(r.sell_start);
-          const closeDays = daysFromNow(r.sell_end);
-          const raceDays = daysFromNow(r.race_date_start_iso);
-
-          let statusBadge;
-          switch (r.status) {
-            case 'on_sale':
-              statusBadge = '<span class="badge on">ON SALE</span>'; break;
-            case 'planned':
-              statusBadge = (dropDays !== null && dropDays > 0)
-                ? `<span class="badge pending">DROPS IN ${dropDays}d</span>`
-                : '<span class="badge pending">PRE-SALE</span>';
-              break;
-            case 'imminent':
-              statusBadge = '<span class="badge pending">IMMINENT</span>'; break;
-            case 'ended':
-              statusBadge = '<span class="badge bad">SALES ENDED</span>'; break;
-            default:
-              statusBadge = '<span class="badge pending">PENDING</span>';
-          }
-
-          let mensOpenBadge;
-          if (r.mens_open_buyable === true) mensOpenBadge = '<span class="badge on">AVAILABLE</span>';
-          else if (r.status === 'on_sale' && r.mens_open_exists && !r.mens_open_active) mensOpenBadge = '<span class="badge bad">SOLD OUT</span>';
-          else mensOpenBadge = '<span class="badge unknown">—</span>';
-
-          let html = `<h2>${escape(title)}</h2>`;
-          html += `<div class="row"><span class="label">Status</span><span class="value">${statusBadge}</span></div>`;
-          if (r.race_dates) html += `<div class="row"><span class="label">Race dates</span><span class="value">${escape(r.race_dates)}</span></div>`;
-          if (r.status === 'planned' && dropDays !== null && dropDays > 0) {
-            html += `<div class="row"><span class="label">Tickets drop in</span><span class="value">${dropDays} day${dropDays===1?'':'s'}</span></div>`;
-          }
-          if (r.status === 'on_sale' && closeDays !== null && closeDays > 0) {
-            html += `<div class="row"><span class="label">Sales close in</span><span class="value">${closeDays} day${closeDays===1?'':'s'}</span></div>`;
-          }
-          html += `<div class="row"><span class="label">Men's Open</span><span class="value">${mensOpenBadge}</span></div>`;
-          const buyUrl = r.vivenu_url || r.link;
-          if (buyUrl) html += `<div class="row"><span class="label"></span><span class="value"><a href="${escape(buyUrl)}" target="_blank" rel="noopener">${r.vivenu_url ? 'Buy tickets' : 'Race page'} →</a></span></div>`;
-          if (r.error) html += `<div class="err">Error: ${escape(r.error)}</div>`;
-          card.innerHTML = html;
-          root.appendChild(card);
-        }
+        document.getElementById('search').addEventListener('input', render);
+        document.getElementById('favOnly').addEventListener('change', render);
+        document.getElementById('cards').addEventListener('click', (e) => {
+          const btn = e.target.closest('.star');
+          if (!btn) return;
+          const slug = btn.dataset.slug;
+          if (FAVS.has(slug)) FAVS.delete(slug); else FAVS.add(slug);
+          saveFavSet(FAVS);
+          render();
+        });
+        render();
       })
       .catch(err => {
         document.getElementById('meta').textContent = 'Failed to load data.json: ' + err.message;

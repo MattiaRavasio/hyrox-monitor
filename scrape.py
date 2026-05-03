@@ -27,6 +27,35 @@ def fetch(url: str) -> str:
     return r.text
 
 
+_MONTHS = {
+    "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+    "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
+}
+
+
+def _date_from_card(card_html: str, which: int) -> str | None:
+    """Extract a date string like '29. Oct. 2026' from a listing card.
+    `which` is 1 (start) or 3 (end) — matches `event_date_1` / `event_date_3`."""
+    m = re.search(
+        rf'event_date_{which}[^>]*>.*?<span class="w-post-elm-value">([^<]+)</span>',
+        card_html, re.DOTALL,
+    )
+    return m.group(1).strip() if m else None
+
+
+def _parse_hyrox_date(s: str | None) -> str | None:
+    """Parse '29. Oct. 2026' -> '2026-10-29'."""
+    if not s:
+        return None
+    m = re.match(r"^(\d{1,2})\.\s*([A-Za-z]+)\.\s*(\d{4})$", s.strip())
+    if not m:
+        return None
+    mon = _MONTHS.get(m.group(2)[:3].lower())
+    if not mon:
+        return None
+    return f"{int(m.group(3)):04d}-{mon:02d}-{int(m.group(1)):02d}"
+
+
 def parse_race_list(html: str) -> list[dict]:
     cards = re.split(r'(?=<article class="w-grid-item[^"]*event)', html)
     out = []
@@ -38,12 +67,18 @@ def parse_race_list(html: str) -> list[dict]:
         btns = re.findall(r'<span class="w-btn-label">([^<]+)</span>', c)
         if not (code and title):
             continue
+        date_start = _date_from_card(c, 1)
+        date_end = _date_from_card(c, 3)
         out.append({
             "code": code.group(1).strip(),
             "title": html_mod.unescape(title.group(2).strip()),
             "link": title.group(1).strip(),
             "slug": title.group(1).strip().rstrip("/").split("/")[-1],
             "on_sale_button": "Buy Tickets" in btns,
+            "race_date_start": date_start,
+            "race_date_end": date_end,
+            "race_date_start_iso": _parse_hyrox_date(date_start),
+            "race_date_end_iso": _parse_hyrox_date(date_end),
         })
     return out
 
@@ -134,34 +169,49 @@ def derive_status(r: dict) -> None:
     r["mens_open_buyable"] = (sale_status == "onSale") and bool(r.get("mens_open_active"))
 
 
+def _format_race_dates(start: str | None, end: str | None) -> str | None:
+    if start and end:
+        return f"{start} – {end}"
+    return start or None
+
+
 def collect() -> dict:
     config = json.loads((ROOT / "config.json").read_text())
-    favorites = config["favorites"]
+    favorite_labels = {f["slug"]: f.get("label") for f in config["favorites"]}
 
     print(f"Fetching race list from {LIST_URL}")
     list_html = fetch(LIST_URL)
     all_races = parse_race_list(list_html)
-    by_slug = {r["slug"]: r for r in all_races}
-    print(f"  parsed {len(all_races)} races")
+    print(f"  parsed {len(all_races)} races; {len(favorite_labels)} are favorites")
+
+    # Sanity check: warn about favorite slugs not in the list
+    for slug in favorite_labels:
+        if not any(r["slug"] == slug for r in all_races):
+            print(f"  ! favorite slug not in race list: {slug}")
 
     results = []
-    for fav in favorites:
-        slug, label = fav["slug"], fav["label"]
-        print(f"\nProcessing {label} ({slug})")
-        race = by_slug.get(slug)
-        if not race:
-            print(f"  ! not found in race list")
-            results.append({"slug": slug, "label": label, "error": "not_found_in_list"})
-            continue
-
+    for race in all_races:
+        is_fav = race["slug"] in favorite_labels
         result = {
-            "slug": slug,
-            "label": label,
+            "slug": race["slug"],
             "title": race["title"],
             "link": race["link"],
             "city_code": race["code"],
             "on_sale_button": race["on_sale_button"],
+            "race_date_start": race["race_date_start"],
+            "race_date_end": race["race_date_end"],
+            "race_date_start_iso": race["race_date_start_iso"],
+            "race_date_end_iso": race["race_date_end_iso"],
+            "race_dates": _format_race_dates(race["race_date_start"], race["race_date_end"]),
+            "is_favorite": is_fav,
         }
+
+        if not is_fav:
+            results.append(result)
+            continue
+
+        result["label"] = favorite_labels[race["slug"]]
+        print(f"\nFavorite: {result['label']} ({race['slug']})")
 
         try:
             event_html = fetch(race["link"])
@@ -171,9 +221,11 @@ def collect() -> dict:
             results.append(result)
             continue
 
-        result["race_dates"] = parse_race_dates(event_html)
-        if result["race_dates"]:
-            print(f"  race dates: {result['race_dates']}")
+        # Detail page sometimes has more precise dates than the listing card.
+        detail_dates = parse_race_dates(event_html)
+        if detail_dates:
+            result["race_dates"] = detail_dates
+            print(f"  race dates: {detail_dates}")
 
         vivenu_url = find_vivenu_url(event_html)
         if not vivenu_url:
@@ -204,6 +256,7 @@ def collect() -> dict:
     return {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "total_races_on_site": len(all_races),
+        "favorites_count": len(favorite_labels),
         "races": results,
     }
 
@@ -212,6 +265,8 @@ def diff_messages(old: dict, new: dict) -> list[str]:
     old_by_slug = {r["slug"]: r for r in old.get("races", [])}
     msgs = []
     for r in new["races"]:
+        if not r.get("is_favorite"):
+            continue  # only notify for server-side favorites (config.json)
         prev = old_by_slug.get(r["slug"])
         if prev is None:
             continue  # don't notify on first-time-seeing-this-favorite
