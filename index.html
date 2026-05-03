@@ -246,7 +246,10 @@
           lastSection = section;
         }
         const card = document.createElement('div');
-        const isTracked = r.is_favorite || r.status; // server-side fully tracked race
+        // Only server-side favorites (config.json) have real Vivenu data.
+        // Other races derive a generic status from the listing button only,
+        // which doesn't distinguish on-sale from imminent — render compact.
+        const isTracked = !!r.is_favorite;
         card.className = 'card' + (isTracked ? ' full' : '');
         card.innerHTML = isTracked ? renderCardFull(r, isFav) : renderCardCompact(r, isFav);
         root.appendChild(card);
