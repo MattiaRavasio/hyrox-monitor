@@ -1,0 +1,108 @@
+{
+  "races": [
+    {
+      "city_code": "BDX",
+      "label": "Bordeaux",
+      "link": "https://hyrox.com/event/hyrox-bordeaux-s26-27/",
+      "mens_open_buyable": false,
+      "on_sale_button": true,
+      "race_dates": "30 Sep 2026 \u2013 4 Oct 2026",
+      "slug": "hyrox-bordeaux-s26-27",
+      "status": "imminent",
+      "title": "INTERSPORT HYROX BORDEAUX",
+      "vivenu_status": "no_vivenu_link"
+    },
+    {
+      "city_code": "GVA",
+      "drops_in_days": 2,
+      "label": "Geneva",
+      "link": "https://hyrox.com/event/hyrox-geneva/",
+      "mens_open_active": true,
+      "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 129
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 129
+        }
+      ],
+      "on_sale_button": true,
+      "race_dates": "9 Oct 2026 \u2013 11 Oct 2026",
+      "sale_status": "planned",
+      "sell_end": "2026-10-11T21:59:00.000Z",
+      "sell_start": "2026-05-06T10:00:00.000Z",
+      "slug": "hyrox-geneva",
+      "status": "planned",
+      "title": "Let\u2019s Go Fitness HYROX Geneva",
+      "vivenu_url": "https://ch.hyrox.com/event/hyrox-geneva-season-26-27-jlfer2?useEmbed=true"
+    },
+    {
+      "city_code": "VLC",
+      "label": "Valencia",
+      "link": "https://hyrox.com/event/hyrox-valencia/",
+      "mens_open_buyable": false,
+      "on_sale_button": false,
+      "race_dates": "16 Oct 2026 \u2013 18 Oct 2026",
+      "slug": "hyrox-valencia",
+      "status": "pending",
+      "title": "HYROX Valencia",
+      "vivenu_status": "no_vivenu_link"
+    },
+    {
+      "city_code": "NCE",
+      "label": "Nice",
+      "link": "https://hyrox.com/event/hyrox-nice-s26-27/",
+      "mens_open_buyable": false,
+      "on_sale_button": true,
+      "race_dates": "29 Oct 2026 \u2013 1 Nov 2026",
+      "slug": "hyrox-nice-s26-27",
+      "status": "imminent",
+      "title": "TRAINSWEATEAT HYROX NICE",
+      "vivenu_status": "no_vivenu_link"
+    },
+    {
+      "city_code": "BCN",
+      "label": "Barcelona",
+      "link": "https://hyrox.com/event/hyrox-barcelona-2/",
+      "mens_open_buyable": false,
+      "on_sale_button": false,
+      "race_dates": "12 Nov 2026 \u2013 15 Nov 2026",
+      "slug": "hyrox-barcelona-2",
+      "status": "pending",
+      "title": "HYROX Barcelona",
+      "vivenu_status": "no_vivenu_link"
+    },
+    {
+      "city_code": "MIL",
+      "label": "Milan",
+      "link": "https://hyrox.com/event/hyrox-milan/",
+      "mens_open_buyable": false,
+      "on_sale_button": false,
+      "race_dates": "5 Dec 2026 \u2013 6 Dec 2026",
+      "slug": "hyrox-milan",
+      "status": "pending",
+      "title": "HYROX Milan",
+      "vivenu_status": "no_vivenu_link"
+    },
+    {
+      "city_code": "PAR",
+      "label": "Paris",
+      "link": "https://hyrox.com/event/hyrox-paris-s26-27/",
+      "mens_open_buyable": false,
+      "on_sale_button": false,
+      "race_dates": "12 Dec 2026 \u2013 20 Dec 2026",
+      "slug": "hyrox-paris-s26-27",
+      "status": "pending",
+      "title": "FITNESS PARK HYROX PARIS",
+      "vivenu_status": "no_vivenu_link"
+    }
+  ],
+  "total_races_on_site": 87,
+  "updated_at": "2026-05-03T22:48:05.753445+00:00"
+}

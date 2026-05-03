@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HYROX Ticket Monitor</title>
+  <style>
+    :root {
+      --bg: #0e1014; --fg: #e6e8ee; --muted: #9aa0aa;
+      --card: #1a1d24; --border: #2a2e36;
+      --accent: #00d97a; --warn: #f59e0b; --bad: #ef4444; --link: #79b8ff;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#f7f7fb; --fg:#1a1d24; --muted:#5a606a; --card:#ffffff; --border:#e1e4ea; --link:#0066cc; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font: 15px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--fg); background: var(--bg); padding: 1rem; max-width: 720px; margin: 0 auto;
+    }
+    h1 { font-size: 1.4rem; margin: 0.5rem 0 0; }
+    .meta { color: var(--muted); font-size: 0.85rem; margin: 0.25rem 0 1rem; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; margin-bottom: 0.75rem; }
+    .card h2 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .row { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin: 0.3rem 0; }
+    .row .label { color: var(--muted); font-size: 0.85rem; }
+    .row .value { font-size: 0.9rem; text-align: right; }
+    .badge { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600; }
+    .badge.on { background: var(--accent); color: #082017; }
+    .badge.pending { background: var(--warn); color: #1a1208; }
+    .badge.unknown { background: var(--border); color: var(--muted); }
+    .badge.bad { background: var(--bad); color: #fff; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .err { color: var(--bad); font-size: 0.85rem; margin-top: 0.4rem; }
+    .empty { color: var(--muted); padding: 2rem 1rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>HYROX Ticket Monitor</h1>
+  <div class="meta" id="meta">Loading…</div>
+  <div id="cards"></div>
+  <script>
+    const daysFromNow = (iso) => {
+      if (!iso) return null;
+      const ms = new Date(iso) - new Date();
+      return Math.ceil(ms / (1000 * 60 * 60 * 24));
+    };
+    const escape = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+    fetch('./data.json?ts=' + Date.now())
+      .then(r => r.ok ? r.json() : Promise.reject(new Error('HTTP ' + r.status)))
+      .then(data => {
+        const meta = document.getElementById('meta');
+        const updated = new Date(data.updated_at);
+        meta.textContent = `Updated ${updated.toLocaleString()} · ${data.races.length} favorites · ${data.total_races_on_site} total races on hyrox.com`;
+
+        const root = document.getElementById('cards');
+        if (!data.races.length) {
+          root.innerHTML = '<div class="empty">No favorites configured.</div>';
+          return;
+        }
+        for (const r of data.races) {
+          const card = document.createElement('div');
+          card.className = 'card';
+          const title = r.title || r.label;
+          const dropDays = daysFromNow(r.sell_start);
+          const closeDays = daysFromNow(r.sell_end);
+          const raceDays = daysFromNow(r.race_date_start_iso);
+
+          let statusBadge;
+          switch (r.status) {
+            case 'on_sale':
+              statusBadge = '<span class="badge on">ON SALE</span>'; break;
+            case 'planned':
+              statusBadge = (dropDays !== null && dropDays > 0)
+                ? `<span class="badge pending">DROPS IN ${dropDays}d</span>`
+                : '<span class="badge pending">PRE-SALE</span>';
+              break;
+            case 'imminent':
+              statusBadge = '<span class="badge pending">IMMINENT</span>'; break;
+            case 'ended':
+              statusBadge = '<span class="badge bad">SALES ENDED</span>'; break;
+            default:
+              statusBadge = '<span class="badge pending">PENDING</span>';
+          }
+
+          let mensOpenBadge;
+          if (r.mens_open_buyable === true) mensOpenBadge = '<span class="badge on">AVAILABLE</span>';
+          else if (r.status === 'on_sale' && r.mens_open_exists && !r.mens_open_active) mensOpenBadge = '<span class="badge bad">SOLD OUT</span>';
+          else mensOpenBadge = '<span class="badge unknown">—</span>';
+
+          let html = `<h2>${escape(title)}</h2>`;
+          html += `<div class="row"><span class="label">Status</span><span class="value">${statusBadge}</span></div>`;
+          if (r.race_dates) html += `<div class="row"><span class="label">Race dates</span><span class="value">${escape(r.race_dates)}</span></div>`;
+          if (r.status === 'planned' && dropDays !== null && dropDays > 0) {
+            html += `<div class="row"><span class="label">Tickets drop in</span><span class="value">${dropDays} day${dropDays===1?'':'s'}</span></div>`;
+          }
+          if (r.status === 'on_sale' && closeDays !== null && closeDays > 0) {
+            html += `<div class="row"><span class="label">Sales close in</span><span class="value">${closeDays} day${closeDays===1?'':'s'}</span></div>`;
+          }
+          html += `<div class="row"><span class="label">Men's Open</span><span class="value">${mensOpenBadge}</span></div>`;
+          const buyUrl = r.vivenu_url || r.link;
+          if (buyUrl) html += `<div class="row"><span class="label"></span><span class="value"><a href="${escape(buyUrl)}" target="_blank" rel="noopener">${r.vivenu_url ? 'Buy tickets' : 'Race page'} →</a></span></div>`;
+          if (r.error) html += `<div class="err">Error: ${escape(r.error)}</div>`;
+          card.innerHTML = html;
+          root.appendChild(card);
+        }
+      })
+      .catch(err => {
+        document.getElementById('meta').textContent = 'Failed to load data.json: ' + err.message;
+      });
+  </script>
+</body>
+</html>

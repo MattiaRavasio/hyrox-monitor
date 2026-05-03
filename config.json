@@ -1,0 +1,11 @@
+{
+  "favorites": [
+    { "slug": "hyrox-bordeaux-s26-27", "label": "Bordeaux" },
+    { "slug": "hyrox-geneva",          "label": "Geneva" },
+    { "slug": "hyrox-valencia",        "label": "Valencia" },
+    { "slug": "hyrox-nice-s26-27",     "label": "Nice" },
+    { "slug": "hyrox-barcelona-2",     "label": "Barcelona" },
+    { "slug": "hyrox-milan",           "label": "Milan" },
+    { "slug": "hyrox-paris-s26-27",    "label": "Paris" }
+  ]
+}
