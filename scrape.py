@@ -49,9 +49,11 @@ def parse_race_list(html: str) -> list[dict]:
 
 
 def find_vivenu_url(event_html: str) -> str | None:
-    # Hyrox uses regional subdomains (hk.hyrox.com, fr.hyrox.com, etc.) for Vivenu shops.
+    # Hyrox uses regional subdomains (hk.hyrox.com, france.hyrox.com, etc.) for Vivenu shops.
+    # Restrict by /event/<slug> path so non-ticketing subdomains (e.g. maintain.hyrox.com)
+    # used for media URLs don't match.
     m = re.search(
-        r'https://(?!www\.)[a-z]{2,5}\.hyrox\.com/event/[a-z0-9\-]+(?:\?[^"\']*)?',
+        r'https://(?!www\.)[a-z]{2,}\.hyrox\.com/event/[a-z0-9\-]+(?:\?[^"\']*)?',
         event_html,
     )
     return m.group(0) if m else None

@@ -4,13 +4,40 @@
       "city_code": "BDX",
       "label": "Bordeaux",
       "link": "https://hyrox.com/event/hyrox-bordeaux-s26-27/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN | Wednesday",
+          "price": 124
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Thursday",
+          "price": 124
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday",
+          "price": 124
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday",
+          "price": 124
+        }
+      ],
       "on_sale_button": true,
       "race_dates": "30 Sep 2026 \u2013 4 Oct 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-10-04T21:59:00.000Z",
+      "sell_start": "2026-04-02T12:00:00.000Z",
       "slug": "hyrox-bordeaux-s26-27",
-      "status": "imminent",
+      "status": "on_sale",
       "title": "INTERSPORT HYROX BORDEAUX",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://france.hyrox.com/event/hyrox-bordeaux-season-26-27-zt4ea2?useEmbed=true"
     },
     {
       "city_code": "GVA",
@@ -56,15 +83,38 @@
     },
     {
       "city_code": "NCE",
+      "drops_in_days": 3,
       "label": "Nice",
       "link": "https://hyrox.com/event/hyrox-nice-s26-27/",
+      "mens_open_active": true,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 124
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 124
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 124
+        }
+      ],
       "on_sale_button": true,
       "race_dates": "29 Oct 2026 \u2013 1 Nov 2026",
+      "sale_status": "planned",
+      "sell_end": "2026-11-01T22:59:00.000Z",
+      "sell_start": "2026-05-07T12:00:00.000Z",
       "slug": "hyrox-nice-s26-27",
-      "status": "imminent",
+      "status": "planned",
       "title": "TRAINSWEATEAT HYROX NICE",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://france.hyrox.com/event/hyrox-nice-season-26-27-rj0pdz?useEmbed=true"
     },
     {
       "city_code": "BCN",
@@ -104,5 +154,5 @@
     }
   ],
   "total_races_on_site": 87,
-  "updated_at": "2026-05-03T23:10:19.336206+00:00"
+  "updated_at": "2026-05-03T23:15:46.395774+00:00"
 }
