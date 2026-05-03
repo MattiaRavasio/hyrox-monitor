@@ -80,9 +80,10 @@
 
   <div class="footnote">
     ★ sorts a race to the top on this device (saved in your browser).
-    For Telegram notifications and full ticket-shop tracking, click <strong>+ track</strong>
-    on a race card — it copies a JSON snippet and opens <code>config.json</code> for editing.
-    Paste the snippet just before the closing <code>]</code> and commit.
+    Status, countdown, and Men's Open availability are tracked for all races.
+    For Telegram alerts on a specific race, click <strong>+ alerts</strong> — it
+    copies a JSON snippet and opens <code>config.json</code> for editing. Paste
+    just before the closing <code>]</code> and commit.
   </div>
 
   <script>
@@ -132,7 +133,9 @@
           ? `<span class="badge pending">DROPS IN ${dropDays}d</span>`
           : '<span class="badge pending">PRE-SALE</span>';
         case 'imminent': return '<span class="badge pending">IMMINENT</span>';
-        case 'ended': return '<span class="badge bad">SALES ENDED</span>';
+        case 'sold_out': return '<span class="badge bad">SOLD OUT</span>';
+        case 'past': return '<span class="badge unknown">RACE PAST</span>';
+        case 'ended': return '<span class="badge unknown">SALES ENDED</span>';
         default: return '<span class="badge pending">PENDING</span>';
       }
     };
@@ -151,7 +154,7 @@
       const dropDays = daysFromNow(r.sell_start);
       const buyUrl = r.vivenu_url || r.link;
       const trackBtn = !r.is_favorite
-        ? `<button class="track-btn" data-slug="${escape(r.slug)}" data-label="${escape(deriveLabel(r))}" title="Copy snippet for config.json + open editor">+ track</button>`
+        ? `<button class="track-btn" data-slug="${escape(r.slug)}" data-label="${escape(deriveLabel(r))}" title="Add to config.json for Telegram alerts">+ alerts</button>`
         : '';
       let html = `
         <div class="card-head">
@@ -178,7 +181,7 @@
     const renderCardCompact = (r, isFav) => {
       const buyUrl = r.link;
       const trackBtn = !r.is_favorite
-        ? `<button class="track-btn" data-slug="${escape(r.slug)}" data-label="${escape(deriveLabel(r))}" title="Copy snippet for config.json + open editor">+ track</button>`
+        ? `<button class="track-btn" data-slug="${escape(r.slug)}" data-label="${escape(deriveLabel(r))}" title="Add to config.json for Telegram alerts">+ alerts</button>`
         : '';
       return `
         <div class="card-head">
@@ -246,12 +249,12 @@
           lastSection = section;
         }
         const card = document.createElement('div');
-        // Only server-side favorites (config.json) have real Vivenu data.
-        // Other races derive a generic status from the listing button only,
-        // which doesn't distinguish on-sale from imminent — render compact.
-        const isTracked = !!r.is_favorite;
-        card.className = 'card' + (isTracked ? ' full' : '');
-        card.innerHTML = isTracked ? renderCardFull(r, isFav) : renderCardCompact(r, isFav);
+        // All races now get detail+vivenu fetched, so render the rich card layout
+        // for everyone. The compact layout is reserved for races that errored or
+        // have no parsed status (extremely rare).
+        const card_kind = r.status ? 'full' : 'compact';
+        card.className = 'card' + (card_kind === 'full' ? ' full' : '');
+        card.innerHTML = card_kind === 'full' ? renderCardFull(r, isFav) : renderCardCompact(r, isFav);
         root.appendChild(card);
       }
     };

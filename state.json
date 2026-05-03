@@ -5,16 +5,69 @@
       "city_code": "CWL",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-cardiff/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN | Thursday",
+          "price": 122.5
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday",
+          "price": 122.5
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Saturday",
+          "price": 66.5
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Wednesday",
+          "price": 122.5
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday",
+          "price": 66.5
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday",
+          "price": 122.5
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Friday",
+          "price": 66.5
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Sunday",
+          "price": 122.5
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday",
+          "price": 66.5
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "4. May. 2026",
       "race_date_end_iso": "2026-05-04",
       "race_date_start": "29. Apr. 2026",
       "race_date_start_iso": "2026-04-29",
-      "race_dates": "29. Apr. 2026 \u2013 4. May. 2026",
+      "race_dates": "29 Apr 2026 \u2013 4 May 2026",
+      "sale_status": "past",
+      "sell_end": "2026-05-03T23:00:00.000Z",
+      "sell_start": "2026-02-06T13:00:00.000Z",
       "slug": "hyrox-cardiff",
-      "status": "imminent",
-      "title": "HYROX Cardiff"
+      "status": "past",
+      "title": "HYROX Cardiff",
+      "vivenu_url": "https://gb.hyrox.com/event/hyrox-cardiff-season-25-26-u86bbo?useEmbed=true"
     },
     {
       "city_code": "LIS",
@@ -26,25 +79,44 @@
       "race_date_end_iso": "2026-05-03",
       "race_date_start": "1. May. 2026",
       "race_date_start_iso": "2026-05-01",
-      "race_dates": "1. May. 2026 \u2013 3. May. 2026",
+      "race_dates": "1 May 2026 \u2013 3 May 2026",
       "slug": "hyrox-lisboa",
       "status": "imminent",
-      "title": "HYROX Lisboa"
+      "title": "HYROX Lisboa",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "HKG",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-hong-kong2026/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 1070
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 1070
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "10. May. 2026",
       "race_date_end_iso": "2026-05-10",
       "race_date_start": "8. May. 2026",
       "race_date_start_iso": "2026-05-08",
-      "race_dates": "8. May. 2026 \u2013 10. May. 2026",
+      "race_dates": "8 May 2026 \u2013 10 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-10T14:00:00.000Z",
+      "sell_start": "2026-01-15T10:00:00.000Z",
       "slug": "hyrox-hong-kong2026",
-      "status": "imminent",
-      "title": "Cigna Healthcare HYROX Hong Kong"
+      "status": "on_sale",
+      "title": "Cigna Healthcare HYROX Hong Kong",
+      "vivenu_url": "https://hk.hyrox.com/event/cigna-healthcare-hyrox-hong-kong-season-25-26-7uisgx?useEmbed=true"
     },
     {
       "city_code": "HEL",
@@ -56,265 +128,594 @@
       "race_date_end_iso": "2026-05-10",
       "race_date_start": "9. May. 2026",
       "race_date_start_iso": "2026-05-09",
-      "race_dates": "9. May. 2026 \u2013 10. May. 2026",
+      "race_dates": "9 May 2026 \u2013 10 May 2026",
       "slug": "hyrox-helsinki",
       "status": "imminent",
-      "title": "HYROX HELSINKI"
+      "title": "HYROX HELSINKI",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "YOW",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-ottawa/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday",
+          "price": 175
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday",
+          "price": 175
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Thursday",
+          "price": 175
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "17. May. 2026",
       "race_date_end_iso": "2026-05-17",
       "race_date_start": "14. May. 2026",
       "race_date_start_iso": "2026-05-14",
-      "race_dates": "14. May. 2026 \u2013 17. May. 2026",
+      "race_dates": "14 May 2026 \u2013 17 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-18T03:59:00.000Z",
+      "sell_start": "2025-12-18T19:00:00.000Z",
       "slug": "hyrox-ottawa",
-      "status": "imminent",
-      "title": "GoodLife HYROX Ottawa"
+      "status": "on_sale",
+      "title": "GoodLife HYROX Ottawa",
+      "vivenu_url": "https://ca.hyrox.com/event/hyrox-ottawa-season-25-26-0lc9l7?useEmbed=true"
     },
     {
       "city_code": "BCN",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-barcelona/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN | Thursday",
+          "price": 130
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday",
+          "price": 130
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday",
+          "price": 130
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "17. May. 2026",
       "race_date_end_iso": "2026-05-17",
       "race_date_start": "14. May. 2026",
       "race_date_start_iso": "2026-05-14",
-      "race_dates": "14. May. 2026 \u2013 17. May. 2026",
+      "race_dates": "14 May 2026 \u2013 17 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-17T16:00:00.000Z",
+      "sell_start": "2025-11-21T13:00:00.000Z",
       "slug": "hyrox-barcelona",
-      "status": "imminent",
-      "title": "Biotherm HYROX Barcelona"
+      "status": "on_sale",
+      "title": "Biotherm HYROX Barcelona",
+      "vivenu_url": "https://spain.hyrox.com/event/hyrox-barcelona-season-25-26-copy-9tiy2w?useEmbed=true"
     },
     {
       "city_code": "HEE",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-heerenveen/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 120
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 120
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 120
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "17. May. 2026",
       "race_date_end_iso": "2026-05-17",
       "race_date_start": "14. May. 2026",
       "race_date_start_iso": "2026-05-14",
-      "race_dates": "14. May. 2026 \u2013 17. May. 2026",
+      "race_dates": "14 May 2026 \u2013 17 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-17T21:00:00.000Z",
+      "sell_start": "2026-02-12T13:00:00.000Z",
       "slug": "hyrox-heerenveen",
-      "status": "imminent",
-      "title": "HYROX Heerenveen"
+      "status": "on_sale",
+      "title": "HYROX Heerenveen",
+      "vivenu_url": "https://benelux.hyrox.com/event/hyrox-heerenveen-season-25-26-svi13b"
     },
     {
       "city_code": "ICN",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-incheon/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "17. May. 2026",
       "race_date_end_iso": "2026-05-17",
       "race_date_start": "15. May. 2026",
       "race_date_start_iso": "2026-05-15",
-      "race_dates": "15. May. 2026 \u2013 17. May. 2026",
+      "race_dates": "15 May 2026 \u2013 17 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2029-05-18T00:00:00.000Z",
+      "sell_start": "2025-11-27T09:00:00.000Z",
       "slug": "hyrox-incheon",
-      "status": "imminent",
-      "title": "AirAsia HYROX Incheon"
+      "status": "on_sale",
+      "title": "AirAsia HYROX Incheon",
+      "vivenu_url": "https://korea.hyrox.com/event/airasia-hyrox-incheon-season-25-26-h48hij?useEmbed=true"
     },
     {
       "city_code": "PBC",
       "is_favorite": false,
       "link": "https://hyrox.com/event/smart-fit-hyrox-puebla/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 2499
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "17. May. 2026",
       "race_date_end_iso": "2026-05-17",
       "race_date_start": "16. May. 2026",
       "race_date_start_iso": "2026-05-16",
-      "race_dates": "16. May. 2026 \u2013 17. May. 2026",
+      "race_dates": "16 May 2026 \u2013 17 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-18T05:59:00.000Z",
+      "sell_start": "2026-02-06T18:00:00.000Z",
       "slug": "smart-fit-hyrox-puebla",
-      "status": "imminent",
-      "title": "HYROX Puebla"
+      "status": "on_sale",
+      "title": "HYROX Puebla",
+      "vivenu_url": "https://mexico.hyrox.com/event/smart-fit-hyrox-puebla-season-25-26-baasza"
     },
     {
       "city_code": "SHA",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-shanghai/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 105
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "17. May. 2026",
       "race_date_end_iso": "2026-05-17",
       "race_date_start": "16. May. 2026",
       "race_date_start_iso": "2026-05-16",
-      "race_dates": "16. May. 2026 \u2013 17. May. 2026",
+      "race_dates": "16 May 2026 \u2013 17 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-17T13:00:00.000Z",
+      "sell_start": "2026-04-02T04:00:00.000Z",
       "slug": "hyrox-shanghai",
-      "status": "imminent",
-      "title": "24/7 FITNESS HYROX Shanghai"
+      "status": "on_sale",
+      "title": "24/7 FITNESS HYROX Shanghai",
+      "vivenu_url": "https://china.hyrox.com/event/hyrox-shanghai-season-25-26-b2fu2u?useEmbed=true"
     },
     {
       "city_code": "LYN",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-lyon/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN |\u00a0Wednesday ",
+          "price": 114
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN |\u00a0Thursday",
+          "price": 114
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN |\u00a0Friday",
+          "price": 114
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday",
+          "price": 114
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "24. May. 2026",
       "race_date_end_iso": "2026-05-24",
       "race_date_start": "20. May. 2026",
       "race_date_start_iso": "2026-05-20",
-      "race_dates": "20. May. 2026 \u2013 24. May. 2026",
+      "race_dates": "20 May 2026 \u2013 24 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-24T21:59:00.000Z",
+      "sell_start": "2025-12-11T13:00:00.000Z",
       "slug": "hyrox-lyon",
-      "status": "imminent",
-      "title": "Creapure\u00ae HYROX Lyon"
+      "status": "on_sale",
+      "title": "Creapure\u00ae HYROX Lyon",
+      "vivenu_url": "https://france.hyrox.com/event/creapure-hyrox-lyon-season-25-26-oyl0i6?useEmbed=true"
     },
     {
       "city_code": "BER",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-berlin/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday, 22 May 2026",
+          "price": 124
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday, 23 May 2026",
+          "price": 124
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Monday, 25 May 2026",
+          "price": 124
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday, 28 May 2026",
+          "price": 124
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday, 29 May 2026",
+          "price": 124
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday, 30 May 2026",
+          "price": 124
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "31. May. 2026",
       "race_date_end_iso": "2026-05-31",
       "race_date_start": "22. May. 2026",
       "race_date_start_iso": "2026-05-22",
-      "race_dates": "22. May. 2026 \u2013 31. May. 2026",
+      "race_dates": "22 May 2026 \u2013 31 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-31T21:59:00.000Z",
+      "sell_start": "2026-02-18T11:00:00.000Z",
       "slug": "hyrox-berlin",
-      "status": "imminent",
-      "title": "GilletteLabs HYROX Berlin"
+      "status": "on_sale",
+      "title": "GilletteLabs HYROX Berlin",
+      "vivenu_url": "https://da.hyrox.com/event/hyrox-berlin-season-26-27-vb8iwl?useEmbed=true"
     },
     {
       "city_code": "NYC",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-new-york/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN | Thursday, May 28th, 2026",
+          "price": 199
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday, May 29th, 2026",
+          "price": 199
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday, May 30, 2026",
+          "price": 199
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday, June 5, 2026",
+          "price": 199
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday, June 6, 2026",
+          "price": 199
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Thursday, June 4, 2026",
+          "price": 199
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Monday, June 1, 2026",
+          "price": 199
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Wednesday, June 3, 2026",
+          "price": 199
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "7. Jun. 2026",
       "race_date_end_iso": "2026-06-07",
       "race_date_start": "28. May. 2026",
       "race_date_start_iso": "2026-05-28",
-      "race_dates": "28. May. 2026 \u2013 7. Jun. 2026",
+      "race_dates": "28 May 2026 \u2013 7 Jun 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-06-08T21:59:00.000Z",
+      "sell_start": "2026-02-19T17:00:00.000Z",
       "slug": "hyrox-new-york",
-      "status": "imminent",
-      "title": "NYU Langone Health HYROX New York"
+      "status": "on_sale",
+      "title": "NYU Langone Health HYROX New York",
+      "vivenu_url": "https://usa.hyrox.com/event/hyrox-new-york-city-season-25-26-o2vp6v?useEmbed=true"
     },
     {
       "city_code": "RIM",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-rimini/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 125
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "31. May. 2026",
       "race_date_end_iso": "2026-05-31",
       "race_date_start": "28. May. 2026",
       "race_date_start_iso": "2026-05-28",
-      "race_dates": "28. May. 2026 \u2013 31. May. 2026",
+      "race_dates": "28 May 2026 \u2013 31 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-24T21:59:00.000Z",
+      "sell_start": "2026-02-26T11:00:00.000Z",
       "slug": "hyrox-rimini",
-      "status": "imminent",
-      "title": "HYROX Rimini"
+      "status": "on_sale",
+      "title": "HYROX Rimini",
+      "vivenu_url": "https://italy.hyrox.com/event/hyrox-rimini-season-25-26-nz1tfa?useEmbed=true"
     },
     {
       "city_code": "RIX",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-riga/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 120
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "31. May. 2026",
       "race_date_end_iso": "2026-05-31",
       "race_date_start": "30. May. 2026",
       "race_date_start_iso": "2026-05-30",
-      "race_dates": "30. May. 2026 \u2013 31. May. 2026",
+      "race_dates": "30 May 2026 \u2013 31 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-31T05:00:00.000Z",
+      "sell_start": "2026-01-16T10:00:00.000Z",
       "slug": "hyrox-riga",
-      "status": "imminent",
-      "title": "LEMON GYM HYROX RIGA"
+      "status": "on_sale",
+      "title": "LEMON GYM HYROX RIGA",
+      "vivenu_url": "https://lv.hyrox.com/event/hyrox-riga-season-25-26-vtnqs3?useEmbed=true"
     },
     {
       "city_code": "BER",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-berlin/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "31. May. 2026",
       "race_date_end_iso": "2026-05-31",
       "race_date_start": "30. May. 2026",
       "race_date_start_iso": "2026-05-30",
-      "race_dates": "30. May. 2026 \u2013 31. May. 2026",
+      "race_dates": "30 May 2026 \u2013 31 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-31T18:00:00.000Z",
+      "sell_start": "2026-02-18T15:00:00.000Z",
       "slug": "hyrox-youngstars-berlin",
-      "status": "imminent",
-      "title": "HYROX YOUNGSTARS Berlin"
+      "status": "on_sale",
+      "title": "HYROX YOUNGSTARS Berlin",
+      "vivenu_url": "https://da.hyrox.com/event/hyrox-youngstars-berlin-season-25-26-8e719a"
     },
     {
       "city_code": "JHB",
       "is_favorite": false,
       "link": "https://hyrox.com/event/virgin-active-hyrox-johannesburg-25-26/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 1500
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "31. May. 2026",
       "race_date_end_iso": "2026-05-31",
       "race_date_start": "30. May. 2026",
       "race_date_start_iso": "2026-05-30",
-      "race_dates": "30. May. 2026 \u2013 31. May. 2026",
+      "race_dates": "30 May 2026 \u2013 31 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-31T21:59:00.000Z",
+      "sell_start": "2026-03-18T11:00:00.000Z",
       "slug": "virgin-active-hyrox-johannesburg-25-26",
-      "status": "imminent",
-      "title": "Virgin Active HYROX Johannesburg 25/26"
+      "status": "on_sale",
+      "title": "Virgin Active HYROX Johannesburg 25/26",
+      "vivenu_url": "https://sa.hyrox.com/event/hyrox-johannesburg-season-25-26-y9gpgc?useEmbed=true"
     },
     {
       "city_code": "BUE",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-buenos-aires/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday",
+          "price": 129
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": null,
       "race_date_end_iso": null,
       "race_date_start": "13. Jun. 2026",
       "race_date_start_iso": "2026-06-13",
       "race_dates": "13. Jun. 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-06-14T01:59:00.000Z",
+      "sell_start": "2026-04-02T15:00:00.000Z",
       "slug": "hyrox-buenos-aires",
-      "status": "imminent",
-      "title": "HYROX Buenos Aires"
+      "status": "on_sale",
+      "title": "HYROX Buenos Aires",
+      "vivenu_url": "https://ar.hyrox.com/event/hyrox-buenos-aires-season-25-26-taxch8?useEmbed=true"
     },
     {
       "city_code": "STO",
       "is_favorite": false,
       "link": "https://hyrox.com/event/puma-hyrox-world-championships-stockholm/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "21. Jun. 2026",
       "race_date_end_iso": "2026-06-21",
       "race_date_start": "18. Jun. 2026",
       "race_date_start_iso": "2026-06-18",
-      "race_dates": "18. Jun. 2026 \u2013 21. Jun. 2026",
+      "race_dates": "18 Jun 2026 \u2013 21 Jun 2026",
+      "sale_status": "soldOut",
+      "sell_end": "2026-06-21T21:59:00.000Z",
+      "sell_start": "2025-10-07T10:00:00.000Z",
       "slug": "puma-hyrox-world-championships-stockholm",
-      "status": "imminent",
-      "title": "PUMA HYROX World Championships Stockholm"
+      "status": "soldOut",
+      "title": "PUMA HYROX World Championships Stockholm",
+      "vivenu_url": "https://worlds.hyrox.com/event/686b7ae3af7b811eb7649df9"
     },
     {
       "city_code": "JKT",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-jakarta/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 2204730
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "28. Jun. 2026",
       "race_date_end_iso": "2026-06-28",
       "race_date_start": "27. Jun. 2026",
       "race_date_start_iso": "2026-06-27",
-      "race_dates": "27. Jun. 2026 \u2013 28. Jun. 2026",
+      "race_dates": "27 Jun 2026 \u2013 28 Jun 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-06-28T15:00:00.000Z",
+      "sell_start": "2026-03-16T11:00:00.000Z",
       "slug": "hyrox-jakarta",
-      "status": "imminent",
-      "title": "AirAsia HYROX Jakarta"
+      "status": "on_sale",
+      "title": "AirAsia HYROX Jakarta",
+      "vivenu_url": "https://indonesia.hyrox.com/event/airasia-hyrox-jakarta-season-25-26-38x7xg?useEmbed=true"
     },
     {
       "city_code": "SYD",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-sydney/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Wednesday",
+          "price": 222
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 222
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Sunday",
+          "price": 222
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "5. Jul. 2026",
       "race_date_end_iso": "2026-07-05",
       "race_date_start": "1. Jul. 2026",
       "race_date_start_iso": "2026-07-01",
-      "race_dates": "1. Jul. 2026 \u2013 5. Jul. 2026",
+      "race_dates": "1 Jul 2026 \u2013 5 Jul 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-07-06T12:00:00.000Z",
+      "sell_start": "2026-03-27T07:00:00.000Z",
       "slug": "hyrox-sydney",
-      "status": "imminent",
-      "title": "BYD HYROX Sydney"
+      "status": "on_sale",
+      "title": "BYD HYROX Sydney",
+      "vivenu_url": "https://australia.hyrox.com/event/hyrox-sydney-season-26-27-ms0b4k?useEmbed=true"
     },
     {
       "city_code": "HGH",
@@ -326,10 +727,11 @@
       "race_date_end_iso": "2026-07-05",
       "race_date_start": "4. Jul. 2026",
       "race_date_start_iso": "2026-07-04",
-      "race_dates": "4. Jul. 2026 \u2013 5. Jul. 2026",
+      "race_dates": "4 Jul 2026 \u2013 5 Jul 2026",
       "slug": "hyrox-hangzhou",
       "status": "pending",
-      "title": "TORRAS HYROX Hangzhou"
+      "title": "TORRAS HYROX Hangzhou",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "AUH",
@@ -344,7 +746,8 @@
       "race_dates": null,
       "slug": "hyrox-abu-dhabi",
       "status": "pending",
-      "title": "HYROX Abu Dhabi"
+      "title": "HYROX Abu Dhabi",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "DEL",
@@ -356,10 +759,11 @@
       "race_date_end_iso": "2026-07-26",
       "race_date_start": "24. Jul. 2026",
       "race_date_start_iso": "2026-07-24",
-      "race_dates": "24. Jul. 2026 \u2013 26. Jul. 2026",
+      "race_dates": "24 Jul 2026 \u2013 26 Jul 2026",
       "slug": "hyrox-delhi",
       "status": "imminent",
-      "title": "Masters\u2019 Union HYROX Delhi"
+      "title": "Masters\u2019 Union HYROX Delhi",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "CTU",
@@ -371,55 +775,89 @@
       "race_date_end_iso": "2026-08-02",
       "race_date_start": "1. Aug. 2026",
       "race_date_start_iso": "2026-08-01",
-      "race_dates": "1. Aug. 2026 \u2013 2. Aug. 2026",
+      "race_dates": "1 Aug 2026 \u2013 2 Aug 2026",
       "slug": "hyrox-chengdu",
       "status": "pending",
-      "title": "HYROX Chengdu"
+      "title": "HYROX Chengdu",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "IST",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-istanbul/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 6875
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "2. Aug. 2026",
       "race_date_end_iso": "2026-08-02",
       "race_date_start": "1. Aug. 2026",
       "race_date_start_iso": "2026-08-01",
-      "race_dates": "1. Aug. 2026 \u2013 2. Aug. 2026",
+      "race_dates": "1 Aug 2026 \u2013 2 Aug 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-08-02T04:59:00.000Z",
+      "sell_start": "2026-04-29T11:00:00.000Z",
       "slug": "hyrox-istanbul",
-      "status": "imminent",
-      "title": "HYROX Istanbul"
+      "status": "on_sale",
+      "title": "HYROX Istanbul",
+      "vivenu_url": "https://turkiye.hyrox.com/event/hyrox-istanbul-season-26-27-su6dnr?useEmbed=true"
     },
     {
       "city_code": "CHB",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-chiba/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "9. Aug. 2026",
       "race_date_end_iso": "2026-08-09",
       "race_date_start": "7. Aug. 2026",
       "race_date_start_iso": "2026-08-07",
-      "race_dates": "7. Aug. 2026 \u2013 9. Aug. 2026",
+      "race_dates": "7 Aug 2026 \u2013 9 Aug 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-08-09T13:00:00.000Z",
+      "sell_start": "2026-04-23T09:00:00.000Z",
       "slug": "hyrox-chiba",
-      "status": "imminent",
-      "title": "AirAsia HYROX Chiba"
+      "status": "on_sale",
+      "title": "AirAsia HYROX Chiba",
+      "vivenu_url": "https://japan.hyrox.com/event/hyrox-chiba-season-26-27-qzyubs?useEmbed=true"
     },
     {
       "city_code": "BKK",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-bangkok-2/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 4719
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "16. Aug. 2026",
       "race_date_end_iso": "2026-08-16",
       "race_date_start": "14. Aug. 2026",
       "race_date_start_iso": "2026-08-14",
-      "race_dates": "14. Aug. 2026 \u2013 16. Aug. 2026",
+      "race_dates": "14 Aug 2026 \u2013 16 Aug 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-08-16T15:00:00.000Z",
+      "sell_start": "2026-04-30T11:00:00.000Z",
       "slug": "hyrox-bangkok-2",
-      "status": "imminent",
-      "title": "BYD HYROX Bangkok"
+      "status": "on_sale",
+      "title": "BYD HYROX Bangkok",
+      "vivenu_url": "https://thailand.hyrox.com/event/hyrox-bangkok-season-26-27-3fhlh8?useEmbed=true"
     },
     {
       "city_code": "CPT",
@@ -431,10 +869,11 @@
       "race_date_end_iso": "2026-08-15",
       "race_date_start": "14. Aug. 2026",
       "race_date_start_iso": "2026-08-14",
-      "race_dates": "14. Aug. 2026 \u2013 15. Aug. 2026",
+      "race_dates": "14 Aug 2026 \u2013 15 Aug 2026",
       "slug": "virgin-active-hyrox-cape-town-26-27",
       "status": "pending",
-      "title": "Virgin Active HYROX Cape Town"
+      "title": "Virgin Active HYROX Cape Town",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "SZX",
@@ -446,55 +885,120 @@
       "race_date_end_iso": "2026-08-16",
       "race_date_start": "15. Aug. 2026",
       "race_date_start_iso": "2026-08-15",
-      "race_dates": "15. Aug. 2026 \u2013 16. Aug. 2026",
+      "race_dates": "15 Aug 2026 \u2013 16 Aug 2026",
       "slug": "hyrox-shenzhen",
       "status": "pending",
-      "title": "HYROX Shenzhen"
+      "title": "HYROX Shenzhen",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "PER",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-perth/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 222
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Sunday",
+          "price": 222
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "23. Aug. 2026",
       "race_date_end_iso": "2026-08-23",
       "race_date_start": "21. Aug. 2026",
       "race_date_start_iso": "2026-08-21",
-      "race_dates": "21. Aug. 2026 \u2013 23. Aug. 2026",
+      "race_dates": "21 Aug 2026 \u2013 23 Aug 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-08-23T14:00:00.000Z",
+      "sell_start": "2026-04-30T10:00:00.000Z",
       "slug": "hyrox-perth",
-      "status": "imminent",
-      "title": "AirAsia HYROX Perth"
+      "status": "on_sale",
+      "title": "AirAsia HYROX Perth",
+      "vivenu_url": "https://australia.hyrox.com/event/hyrox-perth-season-26-27-puy2kq?useEmbed=true"
     },
     {
       "city_code": "WAS",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-washington-d-c-26-27/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 195
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 195
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 195
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Monday",
+          "price": 195
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "7. Sep. 2026",
       "race_date_end_iso": "2026-09-07",
       "race_date_start": "3. Sep. 2026",
       "race_date_start_iso": "2026-09-03",
-      "race_dates": "3. Sep. 2026 \u2013 7. Sep. 2026",
+      "race_dates": "3 Sep 2026 \u2013 7 Sep 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-09-07T21:59:00.000Z",
+      "sell_start": "2026-04-16T16:00:00.000Z",
       "slug": "hyrox-washington-d-c-26-27",
-      "status": "imminent",
-      "title": "Amazfit HYROX Washington D.C."
+      "status": "on_sale",
+      "title": "Amazfit HYROX Washington D.C.",
+      "vivenu_url": "https://usa.hyrox.com/event/hyrox-washington-dc-season-26-27-3c9t0v?useEmbed=true"
     },
     {
       "city_code": "TNF",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-tenerife/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 125
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "6. Sep. 2026",
       "race_date_end_iso": "2026-09-06",
       "race_date_start": "4. Sep. 2026",
       "race_date_start_iso": "2026-09-04",
-      "race_dates": "4. Sep. 2026 \u2013 6. Sep. 2026",
+      "race_dates": "4 Sep 2026 \u2013 6 Sep 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-09-06T21:59:00.000Z",
+      "sell_start": "2026-03-18T13:00:00.000Z",
       "slug": "hyrox-tenerife",
-      "status": "imminent",
-      "title": "HYROX Tenerife"
+      "status": "on_sale",
+      "title": "HYROX Tenerife",
+      "vivenu_url": "https://spain.hyrox.com/event/hyrox-tenerife-season-26-27-iv1ecx?useEmbed=true"
     },
     {
       "city_code": "ACA",
@@ -506,10 +1010,11 @@
       "race_date_end_iso": "2026-09-06",
       "race_date_start": "5. Sep. 2026",
       "race_date_start_iso": "2026-09-05",
-      "race_dates": "5. Sep. 2026 \u2013 6. Sep. 2026",
+      "race_dates": "5 Sep 2026 \u2013 6 Sep 2026",
       "slug": "hyrox-acapulco",
       "status": "pending",
-      "title": "HYROX Acapulco"
+      "title": "HYROX Acapulco",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "PEK",
@@ -521,25 +1026,49 @@
       "race_date_end_iso": "2026-09-13",
       "race_date_start": "12. Sep. 2026",
       "race_date_start_iso": "2026-09-12",
-      "race_dates": "12. Sep. 2026 \u2013 13. Sep. 2026",
+      "race_dates": "12 Sep 2026 \u2013 13 Sep 2026",
       "slug": "hyrox-beijing-0912",
       "status": "pending",
-      "title": "HYROX Beijing"
+      "title": "HYROX Beijing",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "MAA",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-maastricht/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 120
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 120
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 120
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "20. Sep. 2026",
       "race_date_end_iso": "2026-09-20",
       "race_date_start": "17. Sep. 2026",
       "race_date_start_iso": "2026-09-17",
-      "race_dates": "17. Sep. 2026 \u2013 20. Sep. 2026",
+      "race_dates": "17 Sep 2026 \u2013 20 Sep 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-09-20T21:59:00.000Z",
+      "sell_start": "2026-04-09T12:00:00.000Z",
       "slug": "hyrox-maastricht",
-      "status": "imminent",
-      "title": "HYROX Maastricht"
+      "status": "on_sale",
+      "title": "HYROX Maastricht",
+      "vivenu_url": "https://benelux.hyrox.com/event/hyrox-maastricht-season-26-27-4wsn6z"
     },
     {
       "city_code": "BOM",
@@ -551,55 +1080,88 @@
       "race_date_end_iso": "2026-09-20",
       "race_date_start": "18. Sep. 2026",
       "race_date_start_iso": "2026-09-18",
-      "race_dates": "18. Sep. 2026 \u2013 20. Sep. 2026",
+      "race_dates": "18 Sep 2026 \u2013 20 Sep 2026",
       "slug": "hyrox-mumbai",
       "status": "pending",
-      "title": "Masters\u2019 Union HYROX Mumbai"
+      "title": "Masters\u2019 Union HYROX Mumbai",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "SLC",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-salt-lake-city-26-27/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 185
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 185
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "20. Sep. 2026",
       "race_date_end_iso": "2026-09-20",
       "race_date_start": "18. Sep. 2026",
       "race_date_start_iso": "2026-09-18",
-      "race_dates": "18. Sep. 2026 \u2013 20. Sep. 2026",
+      "race_dates": "18 Sep 2026 \u2013 20 Sep 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-09-21T03:59:00.000Z",
+      "sell_start": "2026-04-23T18:00:00.000Z",
       "slug": "hyrox-salt-lake-city-26-27",
-      "status": "imminent",
-      "title": "InBody HYROX Salt Lake City"
+      "status": "on_sale",
+      "title": "InBody HYROX Salt Lake City",
+      "vivenu_url": "https://usa.hyrox.com/event/hyrox-salt-lake-city-season-26-27-auc3ps?useEmbed=true"
     },
     {
       "city_code": "MAA",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-maastricht/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "20. Sep. 2026",
       "race_date_end_iso": "2026-09-20",
       "race_date_start": "19. Sep. 2026",
       "race_date_start_iso": "2026-09-19",
-      "race_dates": "19. Sep. 2026 \u2013 20. Sep. 2026",
+      "race_dates": "19 Sep 2026 \u2013 20 Sep 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-09-20T21:59:00.000Z",
+      "sell_start": "2026-04-09T14:00:00.000Z",
       "slug": "hyrox-youngstars-maastricht",
-      "status": "imminent",
-      "title": "HYROX Youngstars Maastricht"
+      "status": "on_sale",
+      "title": "HYROX Youngstars Maastricht",
+      "vivenu_url": "https://benelux.hyrox.com/event/hyrox-youngstars-maastricht-season-26-27-pzkl9i?useEmbed=true"
     },
     {
       "city_code": "SLC",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-salt-lake-city/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "20. Sep. 2026",
       "race_date_end_iso": "2026-09-20",
       "race_date_start": "19. Sep. 2026",
       "race_date_start_iso": "2026-09-19",
-      "race_dates": "19. Sep. 2026 \u2013 20. Sep. 2026",
+      "race_dates": "19 Sep 2026 \u2013 20 Sep 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-09-21T05:59:00.000Z",
+      "sell_start": "2026-04-23T18:00:00.000Z",
       "slug": "hyrox-youngstars-salt-lake-city",
-      "status": "imminent",
-      "title": "HYROX Youngstars Salt Lake City"
+      "status": "on_sale",
+      "title": "HYROX Youngstars Salt Lake City",
+      "vivenu_url": "https://usa.hyrox.com/event/hyrox-youngstars-salt-lake-city-season-26-27-bdb38o?useEmbed=true"
     },
     {
       "city_code": "ROM",
@@ -611,40 +1173,66 @@
       "race_date_end_iso": "2026-09-27",
       "race_date_start": "24. Sep. 2026",
       "race_date_start_iso": "2026-09-24",
-      "race_dates": "24. Sep. 2026 \u2013 27. Sep. 2026",
+      "race_dates": "24 Sep 2026 \u2013 27 Sep 2026",
       "slug": "hyrox-rome",
       "status": "pending",
-      "title": "HYROX Rome"
+      "title": "HYROX Rome",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "OSL",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-oslo/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday",
+          "price": 1575
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday",
+          "price": 1575
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "27. Sep. 2026",
       "race_date_end_iso": "2026-09-27",
       "race_date_start": "25. Sep. 2026",
       "race_date_start_iso": "2026-09-25",
-      "race_dates": "25. Sep. 2026 \u2013 27. Sep. 2026",
+      "race_dates": "25 Sep 2026 \u2013 27 Sep 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-09-27T21:59:00.000Z",
+      "sell_start": "2026-04-08T10:00:00.000Z",
       "slug": "hyrox-oslo",
-      "status": "imminent",
-      "title": "HYROX Oslo"
+      "status": "on_sale",
+      "title": "HYROX Oslo",
+      "vivenu_url": "https://norway.hyrox.com/event/69bad2a0401a1db77cc0a925"
     },
     {
       "city_code": "OSL",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-oslo/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "27. Sep. 2026",
       "race_date_end_iso": "2026-09-27",
       "race_date_start": "26. Sep. 2026",
       "race_date_start_iso": "2026-09-26",
-      "race_dates": "26. Sep. 2026 \u2013 27. Sep. 2026",
+      "race_dates": "26 Sep 2026 \u2013 27 Sep 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-09-27T21:59:00.000Z",
+      "sell_start": "2026-04-08T10:00:00.000Z",
       "slug": "hyrox-youngstars-oslo",
-      "status": "imminent",
-      "title": "HYROX Youngstars Oslo"
+      "status": "on_sale",
+      "title": "HYROX Youngstars Oslo",
+      "vivenu_url": "https://norway.hyrox.com/event/hyrox-youngstars-oslo-season-26-27-a50r6m?useEmbed=true"
     },
     {
       "city_code": "BDX",
@@ -694,46 +1282,115 @@
       "city_code": "KAR",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-karlsruhe/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 114
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 114
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 114
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "4. Oct. 2026",
       "race_date_end_iso": "2026-10-04",
       "race_date_start": "1. Oct. 2026",
       "race_date_start_iso": "2026-10-01",
-      "race_dates": "1. Oct. 2026 \u2013 4. Oct. 2026",
+      "race_dates": "1 Oct 2026 \u2013 4 Oct 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-10-04T21:59:00.000Z",
+      "sell_start": "2026-04-29T10:00:00.000Z",
       "slug": "hyrox-karlsruhe",
-      "status": "imminent",
-      "title": "HYROX Karlsruhe"
+      "status": "on_sale",
+      "title": "HYROX Karlsruhe",
+      "vivenu_url": "https://da.hyrox.com/event/hyrox-karlsruhe-season-26-27-5pqd3h?useEmbed=true"
     },
     {
       "city_code": "YYZ",
       "is_favorite": false,
       "link": "https://hyrox.com/event/goodlife-hyrox-toronto-26-27/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN | Thursday",
+          "price": 185
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday",
+          "price": 185
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday",
+          "price": 185
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "4. Oct. 2026",
       "race_date_end_iso": "2026-10-04",
       "race_date_start": "1. Oct. 2026",
       "race_date_start_iso": "2026-10-01",
-      "race_dates": "1. Oct. 2026 \u2013 4. Oct. 2026",
+      "race_dates": "1 Oct 2026 \u2013 4 Oct 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-10-04T21:59:00.000Z",
+      "sell_start": "2026-04-30T16:00:00.000Z",
       "slug": "goodlife-hyrox-toronto-26-27",
-      "status": "imminent",
-      "title": "GoodLife HYROX Toronto"
+      "status": "on_sale",
+      "title": "GoodLife HYROX Toronto",
+      "vivenu_url": "https://ca.hyrox.com/event/hyrox-toronto-season-26-27-3bsreb"
     },
     {
       "city_code": "BOS",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hwpo-hyrox-boston-26-27/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 195
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 195
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 195
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "11. Oct. 2026",
       "race_date_end_iso": "2026-10-11",
       "race_date_start": "8. Oct. 2026",
       "race_date_start_iso": "2026-10-08",
-      "race_dates": "8. Oct. 2026 \u2013 11. Oct. 2026",
+      "race_dates": "8 Oct 2026 \u2013 11 Oct 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-10-12T03:59:00.000Z",
+      "sell_start": "2026-04-30T17:00:00.000Z",
       "slug": "hwpo-hyrox-boston-26-27",
-      "status": "imminent",
-      "title": "HWPO HYROX Boston"
+      "status": "on_sale",
+      "title": "HWPO HYROX Boston",
+      "vivenu_url": "https://usa.hyrox.com/event/hyrox-boston-season-26-27-bgtmeo"
     },
     {
       "city_code": "GVA",
@@ -774,16 +1431,29 @@
       "city_code": "GDN",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-gdansk/",
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 525
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "11. Oct. 2026",
       "race_date_end_iso": "2026-10-11",
       "race_date_start": "10. Oct. 2026",
       "race_date_start_iso": "2026-10-10",
-      "race_dates": "10. Oct. 2026 \u2013 11. Oct. 2026",
+      "race_dates": "10 Oct 2026 \u2013 11 Oct 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-10-11T21:59:00.000Z",
+      "sell_start": "2026-04-16T10:00:00.000Z",
       "slug": "hyrox-gdansk",
-      "status": "imminent",
-      "title": "HYROX GDA\u0143SK"
+      "status": "on_sale",
+      "title": "HYROX GDA\u0143SK",
+      "vivenu_url": "https://pl.hyrox.com/event/hyrox-gdask-season-26-27-91p0ss?useEmbed=true"
     },
     {
       "city_code": "VLC",
@@ -815,7 +1485,8 @@
       "race_dates": "17. Oct. 2026",
       "slug": "hyrox-sao-paulo-2",
       "status": "pending",
-      "title": "HYROX S\u00e3o Paulo"
+      "title": "HYROX S\u00e3o Paulo",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "VLC",
@@ -827,10 +1498,11 @@
       "race_date_end_iso": "2026-10-18",
       "race_date_start": "17. Oct. 2026",
       "race_date_start_iso": "2026-10-17",
-      "race_dates": "17. Oct. 2026 \u2013 18. Oct. 2026",
+      "race_dates": "17 Oct 2026 \u2013 18 Oct 2026",
       "slug": "hyrox-youngstars-valencia",
       "status": "pending",
-      "title": "HYROX Youngstars Valencia"
+      "title": "HYROX Youngstars Valencia",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "TPA",
@@ -842,10 +1514,11 @@
       "race_date_end_iso": "2026-10-25",
       "race_date_start": "23. Oct. 2026",
       "race_date_start_iso": "2026-10-23",
-      "race_dates": "23. Oct. 2026 \u2013 25. Oct. 2026",
+      "race_dates": "23 Oct 2026 \u2013 25 Oct 2026",
       "slug": "hyrox-tampa",
       "status": "pending",
-      "title": "HYROX Tampa"
+      "title": "HYROX Tampa",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "BIR",
@@ -857,10 +1530,11 @@
       "race_date_end_iso": "2026-11-01",
       "race_date_start": "27. Oct. 2026",
       "race_date_start_iso": "2026-10-27",
-      "race_dates": "27. Oct. 2026 \u2013 1. Nov. 2026",
+      "race_dates": "27 Oct 2026 \u2013 1 Nov 2026",
       "slug": "hyrox-birmingham",
       "status": "pending",
-      "title": "HYROX Birmingham"
+      "title": "HYROX Birmingham",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "HAM",
@@ -872,10 +1546,11 @@
       "race_date_end_iso": "2026-11-01",
       "race_date_start": "28. Oct. 2026",
       "race_date_start_iso": "2026-10-28",
-      "race_dates": "28. Oct. 2026 \u2013 1. Nov. 2026",
+      "race_dates": "28 Oct 2026 \u2013 1 Nov 2026",
       "slug": "intersport-hyrox-hamburg",
       "status": "pending",
-      "title": "Intersport HYROX Hamburg"
+      "title": "Intersport HYROX Hamburg",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "NCE",
@@ -927,10 +1602,11 @@
       "race_date_end_iso": "2026-11-01",
       "race_date_start": "30. Oct. 2026",
       "race_date_start_iso": "2026-10-30",
-      "race_dates": "30. Oct. 2026 \u2013 1. Nov. 2026",
+      "race_dates": "30 Oct 2026 \u2013 1 Nov 2026",
       "slug": "hyrox-mexico-city",
       "status": "pending",
-      "title": "HYROX Mexico City"
+      "title": "HYROX Mexico City",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "SHA",
@@ -942,10 +1618,11 @@
       "race_date_end_iso": "2026-11-01",
       "race_date_start": "31. Oct. 2026",
       "race_date_start_iso": "2026-10-31",
-      "race_dates": "31. Oct. 2026 \u2013 1. Nov. 2026",
+      "race_dates": "31 Oct 2026 \u2013 1 Nov 2026",
       "slug": "hyrox-shanghai-1031",
       "status": "pending",
-      "title": "HYROX Shanghai"
+      "title": "HYROX Shanghai",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "BIR",
@@ -957,10 +1634,11 @@
       "race_date_end_iso": "2026-11-01",
       "race_date_start": "31. Oct. 2026",
       "race_date_start_iso": "2026-10-31",
-      "race_dates": "31. Oct. 2026 \u2013 1. Nov. 2026",
+      "race_dates": "31 Oct 2026 \u2013 1 Nov 2026",
       "slug": "hyrox-youngstars-birmingham",
       "status": "pending",
-      "title": "HYROX Youngstars Birmingham"
+      "title": "HYROX Youngstars Birmingham",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "DUB",
@@ -972,10 +1650,11 @@
       "race_date_end_iso": "2026-11-15",
       "race_date_start": "11. Nov. 2026",
       "race_date_start_iso": "2026-11-11",
-      "race_dates": "11. Nov. 2026 \u2013 15. Nov. 2026",
+      "race_dates": "11 Nov 2026 \u2013 15 Nov 2026",
       "slug": "hyrox-dublin",
       "status": "pending",
-      "title": "HYROX Dublin"
+      "title": "HYROX Dublin",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "DUS",
@@ -987,10 +1666,11 @@
       "race_date_end_iso": "2026-11-15",
       "race_date_start": "11. Nov. 2026",
       "race_date_start_iso": "2026-11-11",
-      "race_dates": "11. Nov. 2026 \u2013 15. Nov. 2026",
+      "race_dates": "11 Nov 2026 \u2013 15 Nov 2026",
       "slug": "hyrox-dusseldorf",
       "status": "pending",
-      "title": "HYROX D\u00fcsseldorf"
+      "title": "HYROX D\u00fcsseldorf",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "BCN",
@@ -1019,10 +1699,11 @@
       "race_date_end_iso": "2026-11-15",
       "race_date_start": "12. Nov. 2026",
       "race_date_start_iso": "2026-11-12",
-      "race_dates": "12. Nov. 2026 \u2013 15. Nov. 2026",
+      "race_dates": "12 Nov 2026 \u2013 15 Nov 2026",
       "slug": "hyrox-denver",
       "status": "pending",
-      "title": "HYROX Denver"
+      "title": "HYROX Denver",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "SEL",
@@ -1034,10 +1715,11 @@
       "race_date_end_iso": "2026-11-15",
       "race_date_start": "14. Nov. 2026",
       "race_date_start_iso": "2026-11-14",
-      "race_dates": "14. Nov. 2026 \u2013 15. Nov. 2026",
+      "race_dates": "14 Nov 2026 \u2013 15 Nov 2026",
       "slug": "hyrox-seoul",
       "status": "pending",
-      "title": "AirAsia HYROX Seoul"
+      "title": "AirAsia HYROX Seoul",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "DAL",
@@ -1049,10 +1731,11 @@
       "race_date_end_iso": "2026-11-22",
       "race_date_start": "18. Nov. 2026",
       "race_date_start_iso": "2026-11-18",
-      "race_dates": "18. Nov. 2026 \u2013 22. Nov. 2026",
+      "race_dates": "18 Nov 2026 \u2013 22 Nov 2026",
       "slug": "hyrox-dallas",
       "status": "pending",
-      "title": "HYROX Dallas"
+      "title": "HYROX Dallas",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "PZN",
@@ -1064,10 +1747,11 @@
       "race_date_end_iso": "2026-11-22",
       "race_date_start": "20. Nov. 2026",
       "race_date_start_iso": "2026-11-20",
-      "race_dates": "20. Nov. 2026 \u2013 22. Nov. 2026",
+      "race_dates": "20 Nov 2026 \u2013 22 Nov 2026",
       "slug": "hyrox-poznan",
       "status": "pending",
-      "title": "HYROX POZNA\u0143"
+      "title": "HYROX POZNA\u0143",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "CAN",
@@ -1079,10 +1763,11 @@
       "race_date_end_iso": "2026-11-22",
       "race_date_start": "21. Nov. 2026",
       "race_date_start_iso": "2026-11-21",
-      "race_dates": "21. Nov. 2026 \u2013 22. Nov. 2026",
+      "race_dates": "21 Nov 2026 \u2013 22 Nov 2026",
       "slug": "hyrox-guangzhou",
       "status": "pending",
-      "title": "HYROX Guangzhou"
+      "title": "HYROX Guangzhou",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "RIO",
@@ -1097,7 +1782,8 @@
       "race_dates": "21. Nov. 2026",
       "slug": "hyrox-rio-de-janeiro",
       "status": "pending",
-      "title": "HYROX Rio de Janeiro"
+      "title": "HYROX Rio de Janeiro",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "UTR",
@@ -1109,10 +1795,11 @@
       "race_date_end_iso": "2026-11-29",
       "race_date_start": "26. Nov. 2026",
       "race_date_start_iso": "2026-11-26",
-      "race_dates": "26. Nov. 2026 \u2013 29. Nov. 2026",
+      "race_dates": "26 Nov 2026 \u2013 29 Nov 2026",
       "slug": "hyrox-utrecht",
       "status": "pending",
-      "title": "HYROX Utrecht"
+      "title": "HYROX Utrecht",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "JHB",
@@ -1124,10 +1811,11 @@
       "race_date_end_iso": "2026-11-29",
       "race_date_start": "28. Nov. 2026",
       "race_date_start_iso": "2026-11-28",
-      "race_dates": "28. Nov. 2026 \u2013 29. Nov. 2026",
+      "race_dates": "28 Nov 2026 \u2013 29 Nov 2026",
       "slug": "virgin-active-hyrox-johannesburg-26-27",
       "status": "pending",
-      "title": "Virgin Active HYROX Johannesburg"
+      "title": "Virgin Active HYROX Johannesburg",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "UTR",
@@ -1139,10 +1827,11 @@
       "race_date_end_iso": "2026-11-29",
       "race_date_start": "28. Nov. 2026",
       "race_date_start_iso": "2026-11-28",
-      "race_dates": "28. Nov. 2026 \u2013 29. Nov. 2026",
+      "race_dates": "28 Nov 2026 \u2013 29 Nov 2026",
       "slug": "hyrox-youngstars-utrecht",
       "status": "pending",
-      "title": "HYROX Youngstars Utrecht"
+      "title": "HYROX Youngstars Utrecht",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "LON",
@@ -1154,10 +1843,11 @@
       "race_date_end_iso": "2026-12-06",
       "race_date_start": "2. Dec. 2026",
       "race_date_start_iso": "2026-12-02",
-      "race_dates": "2. Dec. 2026 \u2013 6. Dec. 2026",
+      "race_dates": "2 Dec 2026 \u2013 6 Dec 2026",
       "slug": "hyrox-london-excel",
       "status": "pending",
-      "title": "HYROX London ExCel"
+      "title": "HYROX London ExCel",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "ANA",
@@ -1169,10 +1859,11 @@
       "race_date_end_iso": "2026-12-06",
       "race_date_start": "4. Dec. 2026",
       "race_date_start_iso": "2026-12-04",
-      "race_dates": "4. Dec. 2026 \u2013 6. Dec. 2026",
+      "race_dates": "4 Dec 2026 \u2013 6 Dec 2026",
       "slug": "hyrox-anaheim-26-27",
       "status": "pending",
-      "title": "HYROX Anaheim"
+      "title": "HYROX Anaheim",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "MIL",
@@ -1201,10 +1892,11 @@
       "race_date_end_iso": "2026-12-06",
       "race_date_start": "5. Dec. 2026",
       "race_date_start_iso": "2026-12-05",
-      "race_dates": "5. Dec. 2026 \u2013 6. Dec. 2026",
+      "race_dates": "5 Dec 2026 \u2013 6 Dec 2026",
       "slug": "hyrox-youngstars-london-excel",
       "status": "pending",
-      "title": "HYROX Youngstars London ExCel"
+      "title": "HYROX Youngstars London ExCel",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "ANA",
@@ -1216,10 +1908,11 @@
       "race_date_end_iso": "2026-12-06",
       "race_date_start": "5. Dec. 2026",
       "race_date_start_iso": "2026-12-05",
-      "race_dates": "5. Dec. 2026 \u2013 6. Dec. 2026",
+      "race_dates": "5 Dec 2026 \u2013 6 Dec 2026",
       "slug": "hyrox-youngstars-anaheim",
       "status": "pending",
-      "title": "HYROX Youngstars Anaheim"
+      "title": "HYROX Youngstars Anaheim",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "SYX",
@@ -1231,10 +1924,11 @@
       "race_date_end_iso": "2026-12-06",
       "race_date_start": "5. Dec. 2026",
       "race_date_start_iso": "2026-12-05",
-      "race_dates": "5. Dec. 2026 \u2013 6. Dec. 2026",
+      "race_dates": "5 Dec 2026 \u2013 6 Dec 2026",
       "slug": "30454",
       "status": "pending",
-      "title": "HYROX Sanya"
+      "title": "HYROX Sanya",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "STO",
@@ -1249,7 +1943,8 @@
       "race_dates": null,
       "slug": "intersport-hyrox-stockholm-arena",
       "status": "pending",
-      "title": "Intersport HYROX Stockholm"
+      "title": "Intersport HYROX Stockholm",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "FRA",
@@ -1261,10 +1956,11 @@
       "race_date_end_iso": "2026-12-13",
       "race_date_start": "10. Dec. 2026",
       "race_date_start_iso": "2026-12-10",
-      "race_dates": "10. Dec. 2026 \u2013 13. Dec. 2026",
+      "race_dates": "10 Dec 2026 \u2013 13 Dec 2026",
       "slug": "fitness-first-hyrox-frankfurt",
       "status": "pending",
-      "title": "Fitness First HYROX Frankfurt"
+      "title": "Fitness First HYROX Frankfurt",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "BNA",
@@ -1276,10 +1972,11 @@
       "race_date_end_iso": "2026-12-13",
       "race_date_start": "10. Dec. 2026",
       "race_date_start_iso": "2026-12-10",
-      "race_dates": "10. Dec. 2026 \u2013 13. Dec. 2026",
+      "race_dates": "10 Dec 2026 \u2013 13 Dec 2026",
       "slug": "hyrox-nashville",
       "status": "pending",
-      "title": "HYROX Nashville"
+      "title": "HYROX Nashville",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "PAR",
@@ -1308,10 +2005,11 @@
       "race_date_end_iso": "2026-12-20",
       "race_date_start": "17. Dec. 2026",
       "race_date_start_iso": "2026-12-17",
-      "race_dates": "17. Dec. 2026 \u2013 20. Dec. 2026",
+      "race_dates": "17 Dec 2026 \u2013 20 Dec 2026",
       "slug": "hyrox-gent",
       "status": "pending",
-      "title": "HYROX Gent"
+      "title": "HYROX Gent",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "HEL",
@@ -1323,10 +2021,11 @@
       "race_date_end_iso": "2026-12-20",
       "race_date_start": "18. Dec. 2026",
       "race_date_start_iso": "2026-12-18",
-      "race_dates": "18. Dec. 2026 \u2013 20. Dec. 2026",
+      "race_dates": "18 Dec 2026 \u2013 20 Dec 2026",
       "slug": "hyrox-helsinki-2",
       "status": "pending",
-      "title": "HYROX HELSINKI"
+      "title": "HYROX HELSINKI",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "YVR",
@@ -1338,10 +2037,11 @@
       "race_date_end_iso": "2026-12-20",
       "race_date_start": "18. Dec. 2026",
       "race_date_start_iso": "2026-12-18",
-      "race_dates": "18. Dec. 2026 \u2013 20. Dec. 2026",
+      "race_dates": "18 Dec 2026 \u2013 20 Dec 2026",
       "slug": "hyrox-vancouver",
       "status": "pending",
-      "title": "HYROX Vancouver"
+      "title": "HYROX Vancouver",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "PAR",
@@ -1353,10 +2053,11 @@
       "race_date_end_iso": "2026-12-20",
       "race_date_start": "19. Dec. 2026",
       "race_date_start_iso": "2026-12-19",
-      "race_dates": "19. Dec. 2026 \u2013 20. Dec. 2026",
+      "race_dates": "19 Dec 2026 \u2013 20 Dec 2026",
       "slug": "hyrox-youngstars-paris",
       "status": "pending",
-      "title": "HYROX Youngstars Paris"
+      "title": "HYROX Youngstars Paris",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "SGP",
@@ -1371,7 +2072,8 @@
       "race_dates": null,
       "slug": "aia-hyrox-singapore",
       "status": "pending",
-      "title": "AIA HYROX Singapore"
+      "title": "AIA HYROX Singapore",
+      "vivenu_status": "no_vivenu_link"
     },
     {
       "city_code": "MEL",
@@ -1386,9 +2088,10 @@
       "race_dates": null,
       "slug": "hyrox-melbourne",
       "status": "pending",
-      "title": "HYROX Melbourne"
+      "title": "HYROX Melbourne",
+      "vivenu_status": "no_vivenu_link"
     }
   ],
   "total_races_on_site": 87,
-  "updated_at": "2026-05-03T23:26:48.418692+00:00"
+  "updated_at": "2026-05-03T23:43:11.363473+00:00"
 }

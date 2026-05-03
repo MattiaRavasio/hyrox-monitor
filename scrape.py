@@ -156,8 +156,10 @@ def derive_status(r: dict) -> None:
     elif sale_status == "planned":
         r["status"] = "planned"
         r["drops_in_days"] = days_until(r.get("sell_start"))
-    elif sale_status == "ended":
-        r["status"] = "ended"
+    elif sale_status == "soldOut":
+        r["status"] = "sold_out"
+    elif sale_status in ("past", "ended"):
+        r["status"] = sale_status
     elif on_sale_button and not sale_status:
         # Listing button is "Buy Tickets" but Vivenu shop not published yet.
         r["status"] = "imminent"
@@ -189,8 +191,13 @@ def collect() -> dict:
         if not any(r["slug"] == slug for r in all_races):
             print(f"  ! favorite slug not in race list: {slug}")
 
+    # Fetch detail + Vivenu for ALL races (not just favorites) so the dashboard
+    # can show the full status — countdowns, sold-out flags, sale status — for
+    # every event uniformly. Notifications still fire only for `is_favorite` (see
+    # diff_messages); favorite vs non-favorite is now purely a notification toggle.
+    n = len(all_races)
     results = []
-    for race in all_races:
+    for i, race in enumerate(all_races, 1):
         is_fav = race["slug"] in favorite_labels
         result = {
             "slug": race["slug"],
@@ -205,33 +212,29 @@ def collect() -> dict:
             "race_dates": _format_race_dates(race["race_date_start"], race["race_date_end"]),
             "is_favorite": is_fav,
         }
+        if is_fav:
+            result["label"] = favorite_labels[race["slug"]]
 
-        if not is_fav:
-            results.append(result)
-            continue
-
-        result["label"] = favorite_labels[race["slug"]]
-        print(f"\nFavorite: {result['label']} ({race['slug']})")
+        prefix = f"[{i:2d}/{n}] {race['code']:5s}"
 
         try:
             event_html = fetch(race["link"])
         except Exception as e:
-            print(f"  ! event fetch failed: {e}")
+            print(f"{prefix} ! detail fetch failed: {e}")
             result["error"] = f"event_fetch_failed: {e}"
             results.append(result)
             continue
 
-        # Detail page sometimes has more precise dates than the listing card.
         detail_dates = parse_race_dates(event_html)
         if detail_dates:
             result["race_dates"] = detail_dates
-            print(f"  race dates: {detail_dates}")
 
         vivenu_url = find_vivenu_url(event_html)
         if not vivenu_url:
-            print(f"  no vivenu link yet (tickets pending)")
             result["vivenu_status"] = "no_vivenu_link"
+            print(f"{prefix} no vivenu (button={race['on_sale_button']})")
             results.append(result)
+            time.sleep(0.4)
             continue
 
         result["vivenu_url"] = vivenu_url
@@ -240,15 +243,16 @@ def collect() -> dict:
             vd = parse_vivenu(vivenu_html)
             if vd:
                 result.update(vd)
-                print(f"  saleStatus={vd['sale_status']} mens_open_active={vd['mens_open_active']}")
+                print(f"{prefix} {vd['sale_status']:8s} mens_open_active={vd['mens_open_active']}")
             else:
                 result["vivenu_status"] = "no_next_data"
+                print(f"{prefix} vivenu page has no __NEXT_DATA__")
         except Exception as e:
-            print(f"  ! vivenu fetch failed: {e}")
             result["vivenu_status"] = f"vivenu_fetch_failed: {e}"
+            print(f"{prefix} ! vivenu fetch failed: {e}")
 
         results.append(result)
-        time.sleep(1)  # be polite
+        time.sleep(0.4)  # be polite
 
     for r in results:
         derive_status(r)
@@ -338,6 +342,14 @@ def update_google_sheet(data: dict) -> None:
 
 def main() -> int:
     out = collect()
+
+    # Safety net: if more than half the races errored out, the run is unhealthy
+    # (network issue, hyrox.com blocking us, etc.). Don't overwrite the existing
+    # data.json/state.json — preserve the last good snapshot.
+    err_count = sum(1 for r in out["races"] if r.get("error"))
+    if out["races"] and err_count / len(out["races"]) > 0.5:
+        print(f"FATAL: {err_count}/{len(out['races'])} races errored; refusing to overwrite snapshots")
+        return 2
 
     state_path = ROOT / "state.json"
     data_path = ROOT / "data.json"
