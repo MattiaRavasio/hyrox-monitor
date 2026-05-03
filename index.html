@@ -40,6 +40,14 @@
     }
     .star:hover { transform: scale(1.15); }
     .star.on { color: var(--star-on); }
+    .track-btn {
+      flex: 0 0 auto; cursor: pointer;
+      background: var(--input); border: 1px solid var(--border); color: var(--muted);
+      padding: 0.3rem 0.55rem; border-radius: 6px; font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.02em; transition: all 0.15s; white-space: nowrap;
+    }
+    .track-btn:hover { background: var(--accent); color: #082017; border-color: var(--accent); }
+    .track-btn.copied { background: var(--accent); color: #082017; border-color: var(--accent); }
     .card h2 { margin: 0 0 0.25rem; font-size: 1.05rem; flex: 1; min-width: 0; }
     .city { color: var(--muted); font-size: 0.8rem; font-weight: 500; }
     .row { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin: 0.3rem 0; }
@@ -71,9 +79,10 @@
   <div id="cards"></div>
 
   <div class="footnote">
-    ★ in the dashboard sorts a race to the top on this device (saved in your browser).
-    Telegram notifications and full ticket-shop tracking are driven by
-    <code>config.json</code> in the repo — edit that to add a race to those.
+    ★ sorts a race to the top on this device (saved in your browser).
+    For Telegram notifications and full ticket-shop tracking, click <strong>+ track</strong>
+    on a race card — it copies a JSON snippet and opens <code>config.json</code> for editing.
+    Paste the snippet just before the closing <code>]</code> and commit.
   </div>
 
   <script>
@@ -83,6 +92,27 @@
       return Math.ceil((new Date(iso) - new Date()) / (1000 * 60 * 60 * 24));
     };
     const escape = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+    const githubEditUrl = (() => {
+      // Derive `<owner>/<repo>` from the GitHub Pages URL so the dashboard
+      // works for forks without code changes.
+      const owner = (location.host.match(/^([^.]+)\.github\.io$/) || [])[1];
+      const repo = location.pathname.split('/').filter(Boolean)[0];
+      if (owner && repo) return `https://github.com/${owner}/${repo}/edit/main/config.json`;
+      return 'https://github.com/MattiaRavasio/hyrox-monitor/edit/main/config.json';
+    })();
+
+    const deriveLabel = (r) => {
+      // "TRAINSWEATEAT HYROX NICE" -> "Nice", "Cigna Healthcare HYROX Hong Kong" -> "Hong Kong"
+      const title = r.title || '';
+      const m = title.match(/HYROX\s+(.+)$/i);
+      if (m) {
+        return m[1].trim().split(/\s+/)
+          .map(w => w[0].toUpperCase() + w.slice(1).toLowerCase())
+          .join(' ');
+      }
+      return r.city_code || r.slug;
+    };
 
     const loadFavSet = (data) => {
       const stored = localStorage.getItem(STORAGE_KEY);
@@ -120,13 +150,17 @@
       const closeDays = daysFromNow(r.sell_end);
       const dropDays = daysFromNow(r.sell_start);
       const buyUrl = r.vivenu_url || r.link;
+      const trackBtn = !r.is_favorite
+        ? `<button class="track-btn" data-slug="${escape(r.slug)}" data-label="${escape(deriveLabel(r))}" title="Copy snippet for config.json + open editor">+ track</button>`
+        : '';
       let html = `
         <div class="card-head">
-          <button class="star ${isFav ? 'on' : ''}" data-slug="${escape(r.slug)}" title="Toggle favorite">${isFav ? '★' : '☆'}</button>
+          <button class="star ${isFav ? 'on' : ''}" data-slug="${escape(r.slug)}" title="Toggle favorite (this device)">${isFav ? '★' : '☆'}</button>
           <div style="flex:1; min-width:0">
             <h2>${escape(r.title || r.label || r.slug)}</h2>
             <div class="city">${escape(r.city_code || '')}${r.race_dates ? ' · ' + escape(r.race_dates) : ''}</div>
           </div>
+          ${trackBtn}
         </div>
         <div class="row"><span class="label">Status</span><span class="value">${statusBadgeFull(r)}</span></div>`;
       if (r.status === 'planned' && dropDays !== null && dropDays > 0) {
@@ -143,14 +177,17 @@
 
     const renderCardCompact = (r, isFav) => {
       const buyUrl = r.link;
+      const trackBtn = !r.is_favorite
+        ? `<button class="track-btn" data-slug="${escape(r.slug)}" data-label="${escape(deriveLabel(r))}" title="Copy snippet for config.json + open editor">+ track</button>`
+        : '';
       return `
         <div class="card-head">
-          <button class="star ${isFav ? 'on' : ''}" data-slug="${escape(r.slug)}" title="Toggle favorite">${isFav ? '★' : '☆'}</button>
+          <button class="star ${isFav ? 'on' : ''}" data-slug="${escape(r.slug)}" title="Toggle favorite (this device)">${isFav ? '★' : '☆'}</button>
           <div style="flex:1; min-width:0">
             <h2>${escape(r.title || r.slug)}</h2>
             <div class="city">${escape(r.city_code || '')}${r.race_dates ? ' · ' + escape(r.race_dates) : ''}</div>
           </div>
-          <div>${statusBadgeCompact(r)}</div>
+          <div style="display:flex; gap:0.4rem; align-items:center">${statusBadgeCompact(r)}${trackBtn}</div>
         </div>
         ${buyUrl ? `<div class="row" style="margin-top:0.5rem"><span class="label"></span><span class="value"><a href="${escape(buyUrl)}" target="_blank" rel="noopener">Race page →</a></span></div>` : ''}
       `;
@@ -228,9 +265,33 @@
         document.getElementById('search').addEventListener('input', render);
         document.getElementById('favOnly').addEventListener('change', render);
         document.getElementById('cards').addEventListener('click', (e) => {
-          const btn = e.target.closest('.star');
-          if (!btn) return;
-          const slug = btn.dataset.slug;
+          const trackBtn = e.target.closest('.track-btn');
+          if (trackBtn) {
+            e.preventDefault();
+            const slug = trackBtn.dataset.slug;
+            const label = trackBtn.dataset.label;
+            // Leading comma + object means: paste on its own line right before the closing `]`.
+            // The preceding item's missing trailing comma becomes valid via this leading comma,
+            // and the new item itself has no trailing comma, so JSON stays valid.
+            const snippet = `,\n    { "slug": "${slug}", "label": "${label}" }`;
+            const writeClip = navigator.clipboard && navigator.clipboard.writeText
+              ? navigator.clipboard.writeText(snippet)
+              : Promise.reject(new Error('Clipboard API unavailable'));
+            writeClip.then(() => {
+              const orig = trackBtn.textContent;
+              trackBtn.textContent = 'copied → paste before ]';
+              trackBtn.classList.add('copied');
+              window.open(githubEditUrl, '_blank', 'noopener');
+              setTimeout(() => { trackBtn.textContent = orig; trackBtn.classList.remove('copied'); }, 4500);
+            }).catch(() => {
+              trackBtn.textContent = 'clipboard failed';
+              setTimeout(() => { trackBtn.textContent = '+ track'; }, 3000);
+            });
+            return;
+          }
+          const star = e.target.closest('.star');
+          if (!star) return;
+          const slug = star.dataset.slug;
           if (FAVS.has(slug)) FAVS.delete(slug); else FAVS.add(slug);
           saveFavSet(FAVS);
           render();
