@@ -647,7 +647,7 @@
       "sell_end": "2026-06-21T21:59:00.000Z",
       "sell_start": "2025-10-07T10:00:00.000Z",
       "slug": "puma-hyrox-world-championships-stockholm",
-      "status": "soldOut",
+      "status": "sold_out",
       "title": "PUMA HYROX World Championships Stockholm",
       "vivenu_url": "https://worlds.hyrox.com/event/686b7ae3af7b811eb7649df9"
     },
@@ -2093,5 +2093,5 @@
     }
   ],
   "total_races_on_site": 87,
-  "updated_at": "2026-05-03T23:43:11.363473+00:00"
+  "updated_at": "2026-05-04T00:49:15.396895+00:00"
 }
