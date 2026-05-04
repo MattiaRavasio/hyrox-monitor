@@ -70,22 +70,6 @@
       "vivenu_url": "https://gb.hyrox.com/event/hyrox-cardiff-season-25-26-u86bbo?useEmbed=true"
     },
     {
-      "city_code": "LIS",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-lisboa/",
-      "mens_open_buyable": false,
-      "on_sale_button": true,
-      "race_date_end": "3. May. 2026",
-      "race_date_end_iso": "2026-05-03",
-      "race_date_start": "1. May. 2026",
-      "race_date_start_iso": "2026-05-01",
-      "race_dates": "1 May 2026 \u2013 3 May 2026",
-      "slug": "hyrox-lisboa",
-      "status": "imminent",
-      "title": "HYROX Lisboa",
-      "vivenu_status": "no_vivenu_link"
-    },
-    {
       "city_code": "HKG",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-hong-kong2026/",
@@ -2092,6 +2076,6 @@
       "vivenu_status": "no_vivenu_link"
     }
   ],
-  "total_races_on_site": 87,
-  "updated_at": "2026-05-04T03:14:05.692923+00:00"
+  "total_races_on_site": 86,
+  "updated_at": "2026-05-04T05:15:33.470541+00:00"
 }
