@@ -1477,7 +1477,7 @@
     },
     {
       "city_code": "NCE",
-      "drops_in_days": 2,
+      "drops_in_days": 1,
       "is_favorite": true,
       "label": "Nice",
       "link": "https://hyrox.com/event/hyrox-nice-s26-27/",
@@ -2016,5 +2016,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-05T11:33:15.314676+00:00"
+  "updated_at": "2026-05-05T12:33:17.702125+00:00"
 }
