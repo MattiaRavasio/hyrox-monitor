@@ -2,74 +2,6 @@
   "favorites_count": 7,
   "races": [
     {
-      "city_code": "CWL",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-cardiff/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": false,
-          "name": "HYROX MEN | Thursday",
-          "price": 122.5
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday",
-          "price": 122.5
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Saturday",
-          "price": 66.5
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Wednesday",
-          "price": 122.5
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday",
-          "price": 66.5
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Friday",
-          "price": 122.5
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Friday",
-          "price": 66.5
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Sunday",
-          "price": 122.5
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Sunday",
-          "price": 66.5
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "4. May. 2026",
-      "race_date_end_iso": "2026-05-04",
-      "race_date_start": "29. Apr. 2026",
-      "race_date_start_iso": "2026-04-29",
-      "race_dates": "29 Apr 2026 \u2013 4 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-04T23:59:00.000Z",
-      "sell_start": "2026-02-06T13:00:00.000Z",
-      "slug": "hyrox-cardiff",
-      "status": "past",
-      "title": "HYROX Cardiff",
-      "vivenu_url": "https://gb.hyrox.com/event/hyrox-cardiff-season-25-26-u86bbo?useEmbed=true"
-    },
-    {
       "city_code": "HKG",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-hong-kong2026/",
@@ -2083,6 +2015,6 @@
       "vivenu_status": "no_vivenu_link"
     }
   ],
-  "total_races_on_site": 86,
-  "updated_at": "2026-05-05T03:12:30.353758+00:00"
+  "total_races_on_site": 85,
+  "updated_at": "2026-05-05T05:08:59.348943+00:00"
 }
