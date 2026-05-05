@@ -61,11 +61,11 @@
       "race_date_start": "29. Apr. 2026",
       "race_date_start_iso": "2026-04-29",
       "race_dates": "29 Apr 2026 \u2013 4 May 2026",
-      "sale_status": "onSale",
+      "sale_status": "past",
       "sell_end": "2026-05-04T23:59:00.000Z",
       "sell_start": "2026-02-06T13:00:00.000Z",
       "slug": "hyrox-cardiff",
-      "status": "on_sale",
+      "status": "past",
       "title": "HYROX Cardiff",
       "vivenu_url": "https://gb.hyrox.com/event/hyrox-cardiff-season-25-26-u86bbo?useEmbed=true"
     },
@@ -2084,5 +2084,5 @@
     }
   ],
   "total_races_on_site": 86,
-  "updated_at": "2026-05-04T23:23:54.455908+00:00"
+  "updated_at": "2026-05-05T00:46:01.179559+00:00"
 }
