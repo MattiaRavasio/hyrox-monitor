@@ -1310,7 +1310,7 @@
     },
     {
       "city_code": "GVA",
-      "drops_in_days": 1,
+      "drops_in_days": 0,
       "is_favorite": true,
       "label": "Geneva",
       "link": "https://hyrox.com/event/hyrox-geneva/",
@@ -2016,5 +2016,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-05T09:43:07.741850+00:00"
+  "updated_at": "2026-05-05T10:38:50.511518+00:00"
 }
