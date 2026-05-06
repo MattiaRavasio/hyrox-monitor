@@ -1418,7 +1418,6 @@
     },
     {
       "city_code": "VLC",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-valencia/",
       "mens_open_active": false,
@@ -1431,11 +1430,11 @@
       "race_date_start": "17. Oct. 2026",
       "race_date_start_iso": "2026-10-17",
       "race_dates": "17 Oct 2026 \u2013 18 Oct 2026",
-      "sale_status": "planned",
+      "sale_status": "onSale",
       "sell_end": "2026-09-20T21:59:00.000Z",
       "sell_start": "2026-05-06T13:00:00.000Z",
       "slug": "hyrox-youngstars-valencia",
-      "status": "planned",
+      "status": "on_sale",
       "title": "HYROX Youngstars Valencia",
       "vivenu_url": "https://spain.hyrox.com/event/hyrox-youngstars-valencia-season-26-27-3z2c5p?useEmbed=true"
     },
@@ -2028,5 +2027,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-06T12:45:22.110509+00:00"
+  "updated_at": "2026-05-06T13:42:10.303165+00:00"
 }
