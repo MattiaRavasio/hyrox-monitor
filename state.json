@@ -1313,23 +1313,33 @@
       "is_favorite": true,
       "label": "Geneva",
       "link": "https://hyrox.com/event/hyrox-geneva/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": false,
-      "mens_open_tickets": [],
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 129
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 129
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "11. Oct. 2026",
       "race_date_end_iso": "2026-10-11",
       "race_date_start": "9. Oct. 2026",
       "race_date_start_iso": "2026-10-09",
       "race_dates": "9 Oct 2026 \u2013 11 Oct 2026",
-      "sale_status": null,
-      "sell_end": null,
-      "sell_start": null,
+      "sale_status": "onSale",
+      "sell_end": "2026-10-11T21:59:00.000Z",
+      "sell_start": "2026-05-06T10:00:00.000Z",
       "slug": "hyrox-geneva",
-      "status": "imminent",
+      "status": "on_sale",
       "title": "Let\u2019s Go Fitness HYROX Geneva",
-      "vivenu_status": "vivenu_fetch_failed: unsupported format string passed to NoneType.__format__",
       "vivenu_url": "https://ch.hyrox.com/event/hyrox-geneva-season-26-27-jlfer2?useEmbed=true"
     },
     {
@@ -2005,5 +2015,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-06T09:54:15.307475+00:00"
+  "updated_at": "2026-05-06T10:46:16.924034+00:00"
 }
