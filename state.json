@@ -635,19 +635,31 @@
     },
     {
       "city_code": "HGH",
+      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-hangzhou/",
+      "mens_open_active": true,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 105
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "5. Jul. 2026",
       "race_date_end_iso": "2026-07-05",
       "race_date_start": "4. Jul. 2026",
       "race_date_start_iso": "2026-07-04",
       "race_dates": "4 Jul 2026 \u2013 5 Jul 2026",
+      "sale_status": "planned",
+      "sell_end": "2026-07-05T13:00:00.000Z",
+      "sell_start": "2026-05-07T04:00:00.000Z",
       "slug": "hyrox-hangzhou",
-      "status": "imminent",
+      "status": "planned",
       "title": "TORRAS HYROX Hangzhou",
-      "vivenu_status": "vivenu_fetch_failed: 500 Server Error: Internal Server Error for url: https://china.hyrox.com/event/hyrox-hangzhou-season-26-27-0bxk9i?useEmbed=true",
       "vivenu_url": "https://china.hyrox.com/event/hyrox-hangzhou-season-26-27-0bxk9i?useEmbed=true"
     },
     {
@@ -1477,7 +1489,7 @@
     },
     {
       "city_code": "NCE",
-      "drops_in_days": 1,
+      "drops_in_days": 0,
       "is_favorite": true,
       "label": "Nice",
       "link": "https://hyrox.com/event/hyrox-nice-s26-27/",
@@ -2016,5 +2028,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-06T11:39:51.312901+00:00"
+  "updated_at": "2026-05-06T12:45:22.110509+00:00"
 }
