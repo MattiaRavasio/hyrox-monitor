@@ -1388,17 +1388,34 @@
       "is_favorite": true,
       "label": "Valencia",
       "link": "https://hyrox.com/event/hyrox-valencia/",
-      "mens_open_buyable": false,
-      "on_sale_button": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 125
+        }
+      ],
+      "on_sale_button": true,
       "race_date_end": "18. Oct. 2026",
       "race_date_end_iso": "2026-10-18",
       "race_date_start": "16. Oct. 2026",
       "race_date_start_iso": "2026-10-16",
       "race_dates": "16 Oct 2026 \u2013 18 Oct 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-10-18T21:59:00.000Z",
+      "sell_start": "2026-05-06T13:00:00.000Z",
       "slug": "hyrox-valencia",
-      "status": "pending",
+      "status": "on_sale",
       "title": "HYROX Valencia",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://spain.hyrox.com/event/hyrox-valencia-season-26-27-aqh11x?useEmbed=true"
     },
     {
       "city_code": "SPO",
@@ -2027,5 +2044,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-06T16:38:55.190022+00:00"
+  "updated_at": "2026-05-06T17:37:58.313362+00:00"
 }
