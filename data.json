@@ -1420,17 +1420,29 @@
       "city_code": "SPO",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-sao-paulo-2/",
-      "mens_open_buyable": false,
-      "on_sale_button": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 599
+        }
+      ],
+      "on_sale_button": true,
       "race_date_end": null,
       "race_date_end_iso": null,
       "race_date_start": "17. Oct. 2026",
       "race_date_start_iso": "2026-10-17",
       "race_dates": "17. Oct. 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-10-18T01:59:00.000Z",
+      "sell_start": "2026-05-07T15:00:00.000Z",
       "slug": "hyrox-sao-paulo-2",
-      "status": "pending",
+      "status": "on_sale",
       "title": "HYROX S\u00e3o Paulo",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://brazil.hyrox.com/event/69e7809bd801087068c24135"
     },
     {
       "city_code": "VLC",
@@ -2059,5 +2071,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-07T16:40:44.190679+00:00"
+  "updated_at": "2026-05-07T17:38:40.771221+00:00"
 }
