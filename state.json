@@ -5,17 +5,17 @@
       "city_code": "HKG",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-hong-kong2026/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Friday",
           "price": 1070
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday",
           "price": 1070
         }
@@ -1522,12 +1522,11 @@
     },
     {
       "city_code": "NCE",
-      "drops_in_days": 0,
       "is_favorite": true,
       "label": "Nice",
       "link": "https://hyrox.com/event/hyrox-nice-s26-27/",
       "mens_open_active": true,
-      "mens_open_buyable": false,
+      "mens_open_buyable": true,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -1552,11 +1551,11 @@
       "race_date_start": "29. Oct. 2026",
       "race_date_start_iso": "2026-10-29",
       "race_dates": "29 Oct 2026 \u2013 1 Nov 2026",
-      "sale_status": "planned",
+      "sale_status": "onSale",
       "sell_end": "2026-11-01T22:59:00.000Z",
       "sell_start": "2026-05-07T12:00:00.000Z",
       "slug": "hyrox-nice-s26-27",
-      "status": "planned",
+      "status": "on_sale",
       "title": "TRAINSWEATEAT HYROX NICE",
       "vivenu_url": "https://france.hyrox.com/event/hyrox-nice-season-26-27-rj0pdz?useEmbed=true"
     },
@@ -2061,5 +2060,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-07T11:39:21.434497+00:00"
+  "updated_at": "2026-05-07T12:45:51.680383+00:00"
 }
