@@ -1456,11 +1456,10 @@
     },
     {
       "city_code": "TPA",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-tampa/",
       "mens_open_active": true,
-      "mens_open_buyable": false,
+      "mens_open_buyable": true,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -1480,11 +1479,11 @@
       "race_date_start": "23. Oct. 2026",
       "race_date_start_iso": "2026-10-23",
       "race_dates": "23 Oct 2026 \u2013 25 Oct 2026",
-      "sale_status": "planned",
+      "sale_status": "onSale",
       "sell_end": "2026-10-26T03:59:00.000Z",
       "sell_start": "2026-05-07T16:00:00.000Z",
       "slug": "hyrox-tampa",
-      "status": "planned",
+      "status": "on_sale",
       "title": "HYROX Tampa",
       "vivenu_url": "https://usa.hyrox.com/event/hyrox-tampa-season-26-27-lbibjy?useEmbed=true"
     },
@@ -2060,5 +2059,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-07T15:02:42.819770+00:00"
+  "updated_at": "2026-05-07T16:40:44.190679+00:00"
 }
