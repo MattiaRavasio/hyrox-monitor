@@ -130,22 +130,22 @@
       "city_code": "HEE",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-heerenveen/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Thursday",
           "price": 120
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday",
           "price": 120
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Friday",
           "price": 120
         }
@@ -1525,22 +1525,22 @@
       "is_favorite": true,
       "label": "Nice",
       "link": "https://hyrox.com/event/hyrox-nice-s26-27/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Thursday",
           "price": 124
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Friday",
           "price": 124
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday",
           "price": 124
         }
@@ -2060,5 +2060,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-07T13:40:02.029759+00:00"
+  "updated_at": "2026-05-07T15:02:42.819770+00:00"
 }
