@@ -635,11 +635,10 @@
     },
     {
       "city_code": "HGH",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-hangzhou/",
       "mens_open_active": true,
-      "mens_open_buyable": false,
+      "mens_open_buyable": true,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -654,11 +653,11 @@
       "race_date_start": "4. Jul. 2026",
       "race_date_start_iso": "2026-07-04",
       "race_dates": "4 Jul 2026 \u2013 5 Jul 2026",
-      "sale_status": "planned",
+      "sale_status": "onSale",
       "sell_end": "2026-07-05T13:00:00.000Z",
       "sell_start": "2026-05-07T04:00:00.000Z",
       "slug": "hyrox-hangzhou",
-      "status": "planned",
+      "status": "on_sale",
       "title": "TORRAS HYROX Hangzhou",
       "vivenu_url": "https://china.hyrox.com/event/hyrox-hangzhou-season-26-27-0bxk9i?useEmbed=true"
     },
@@ -2062,5 +2061,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-07T03:14:46.339789+00:00"
+  "updated_at": "2026-05-07T05:14:00.669468+00:00"
 }
