@@ -1496,7 +1496,7 @@
       "sell_start": "2026-05-07T16:00:00.000Z",
       "slug": "hyrox-tampa",
       "status": "on_sale",
-      "title": "HYROX Tampa",
+      "title": "myfitnesspal HYROX Tampa",
       "vivenu_url": "https://usa.hyrox.com/event/hyrox-tampa-season-26-27-lbibjy?useEmbed=true"
     },
     {
@@ -2071,5 +2071,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-08T22:25:39.944670+00:00"
+  "updated_at": "2026-05-08T23:25:00.044513+00:00"
 }
