@@ -190,12 +190,12 @@
       "city_code": "PBC",
       "is_favorite": false,
       "link": "https://hyrox.com/event/smart-fit-hyrox-puebla/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday",
           "price": 2499
         }
@@ -2071,5 +2071,5 @@
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-09T14:29:00.739887+00:00"
+  "updated_at": "2026-05-09T15:24:46.153758+00:00"
 }
