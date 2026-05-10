@@ -2,55 +2,6 @@
   "favorites_count": 7,
   "races": [
     {
-      "city_code": "HKG",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-hong-kong2026/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": false,
-          "name": "HYROX MEN | Friday",
-          "price": 1070
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday",
-          "price": 1070
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "10. May. 2026",
-      "race_date_end_iso": "2026-05-10",
-      "race_date_start": "8. May. 2026",
-      "race_date_start_iso": "2026-05-08",
-      "race_dates": "8 May 2026 \u2013 10 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-10T14:00:00.000Z",
-      "sell_start": "2026-01-15T10:00:00.000Z",
-      "slug": "hyrox-hong-kong2026",
-      "status": "past",
-      "title": "Cigna Healthcare HYROX Hong Kong",
-      "vivenu_url": "https://hk.hyrox.com/event/cigna-healthcare-hyrox-hong-kong-season-25-26-7uisgx?useEmbed=true"
-    },
-    {
-      "city_code": "HEL",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-helsinki/",
-      "mens_open_buyable": false,
-      "on_sale_button": true,
-      "race_date_end": "10. May. 2026",
-      "race_date_end_iso": "2026-05-10",
-      "race_date_start": "9. May. 2026",
-      "race_date_start_iso": "2026-05-09",
-      "race_dates": "9 May 2026 \u2013 10 May 2026",
-      "slug": "hyrox-helsinki",
-      "status": "imminent",
-      "title": "HYROX HELSINKI",
-      "vivenu_status": "no_vivenu_link"
-    },
-    {
       "city_code": "YOW",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-ottawa/",
@@ -2070,6 +2021,6 @@
       "vivenu_status": "no_vivenu_link"
     }
   ],
-  "total_races_on_site": 85,
-  "updated_at": "2026-05-10T22:20:48.278981+00:00"
+  "total_races_on_site": 83,
+  "updated_at": "2026-05-10T23:23:14.161820+00:00"
 }
