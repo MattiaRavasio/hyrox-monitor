@@ -2055,7 +2055,6 @@
     },
     {
       "city_code": "MEL",
-      "error": "event_fetch_failed: HTTPSConnectionPool(host='hyrox.com', port=443): Read timed out. (read timeout=30)",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-melbourne/",
       "mens_open_buyable": false,
@@ -2067,9 +2066,10 @@
       "race_dates": null,
       "slug": "hyrox-melbourne",
       "status": "pending",
-      "title": "HYROX Melbourne"
+      "title": "HYROX Melbourne",
+      "vivenu_status": "no_vivenu_link"
     }
   ],
   "total_races_on_site": 85,
-  "updated_at": "2026-05-10T11:25:51.515131+00:00"
+  "updated_at": "2026-05-10T12:26:40.610038+00:00"
 }
