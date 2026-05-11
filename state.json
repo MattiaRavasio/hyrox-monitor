@@ -43,17 +43,17 @@
       "city_code": "BCN",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-barcelona/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Thursday",
           "price": 130
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday",
           "price": 130
         },
@@ -2022,5 +2022,5 @@
     }
   ],
   "total_races_on_site": 83,
-  "updated_at": "2026-05-11T05:25:35.166391+00:00"
+  "updated_at": "2026-05-11T07:22:20.831828+00:00"
 }
