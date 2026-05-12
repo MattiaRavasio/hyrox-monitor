@@ -245,17 +245,17 @@
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Friday, 22 May 2026",
           "price": 124
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday, 23 May 2026",
           "price": 124
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Monday, 25 May 2026",
           "price": 124
         },
@@ -2027,5 +2027,5 @@
     }
   ],
   "total_races_on_site": 83,
-  "updated_at": "2026-05-12T15:02:17.558506+00:00"
+  "updated_at": "2026-05-12T16:49:44.687031+00:00"
 }
