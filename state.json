@@ -1049,19 +1049,42 @@
     },
     {
       "city_code": "ROM",
+      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-rome/",
+      "mens_open_active": true,
       "mens_open_buyable": false,
-      "on_sale_button": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 125
+        }
+      ],
+      "on_sale_button": true,
       "race_date_end": "27. Sep. 2026",
       "race_date_end_iso": "2026-09-27",
       "race_date_start": "24. Sep. 2026",
       "race_date_start_iso": "2026-09-24",
       "race_dates": "24 Sep 2026 \u2013 27 Sep 2026",
+      "sale_status": "planned",
+      "sell_end": "2026-09-20T21:59:00.000Z",
+      "sell_start": "2026-05-14T10:00:00.000Z",
       "slug": "hyrox-rome",
-      "status": "pending",
+      "status": "planned",
       "title": "HYROX Rome",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://italy.hyrox.com/event/hyrox-rome-season-26-27-ny5kx9?useEmbed=true"
     },
     {
       "city_code": "OSL",
@@ -1725,11 +1748,11 @@
       "link": "https://hyrox.com/event/hyrox-utrecht/",
       "mens_open_buyable": false,
       "on_sale_button": false,
-      "race_date_end": "29. Nov. 2026",
-      "race_date_end_iso": "2026-11-29",
+      "race_date_end": "30. Nov. 2026",
+      "race_date_end_iso": "2026-11-30",
       "race_date_start": "26. Nov. 2026",
       "race_date_start_iso": "2026-11-26",
-      "race_dates": "26 Nov 2026 \u2013 29 Nov 2026",
+      "race_dates": "26 Nov 2026 \u2013 30 Nov 2026",
       "slug": "hyrox-utrecht",
       "status": "pending",
       "title": "HYROX Utrecht",
@@ -2027,5 +2050,5 @@
     }
   ],
   "total_races_on_site": 83,
-  "updated_at": "2026-05-13T16:53:08.504062+00:00"
+  "updated_at": "2026-05-13T17:46:31.811425+00:00"
 }
