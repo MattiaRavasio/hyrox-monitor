@@ -699,9 +699,9 @@
       "on_sale_button": true,
       "race_date_end": "9. Aug. 2026",
       "race_date_end_iso": "2026-08-09",
-      "race_date_start": "7. Aug. 2026",
-      "race_date_start_iso": "2026-08-07",
-      "race_dates": "7 Aug 2026 \u2013 9 Aug 2026",
+      "race_date_start": "6. Aug. 2026",
+      "race_date_start_iso": "2026-08-06",
+      "race_dates": "6 Aug 2026 \u2013 9 Aug 2026",
       "sale_status": "onSale",
       "sell_end": "2026-08-09T13:00:00.000Z",
       "sell_start": "2026-04-23T09:00:00.000Z",
@@ -732,9 +732,9 @@
       "on_sale_button": true,
       "race_date_end": "16. Aug. 2026",
       "race_date_end_iso": "2026-08-16",
-      "race_date_start": "14. Aug. 2026",
-      "race_date_start_iso": "2026-08-14",
-      "race_dates": "14 Aug 2026 \u2013 16 Aug 2026",
+      "race_date_start": "13. Aug. 2026",
+      "race_date_start_iso": "2026-08-13",
+      "race_dates": "13 Aug 2026 \u2013 16 Aug 2026",
       "sale_status": "onSale",
       "sell_end": "2026-08-16T15:00:00.000Z",
       "sell_start": "2026-04-30T11:00:00.000Z",
@@ -2027,5 +2027,5 @@
     }
   ],
   "total_races_on_site": 83,
-  "updated_at": "2026-05-13T10:56:20.788079+00:00"
+  "updated_at": "2026-05-13T11:47:30.237279+00:00"
 }
