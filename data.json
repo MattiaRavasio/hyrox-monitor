@@ -959,14 +959,14 @@
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-mumbai/",
       "mens_open_buyable": false,
-      "on_sale_button": false,
+      "on_sale_button": true,
       "race_date_end": "20. Sep. 2026",
       "race_date_end_iso": "2026-09-20",
       "race_date_start": "18. Sep. 2026",
       "race_date_start_iso": "2026-09-18",
       "race_dates": "18 Sep 2026 \u2013 20 Sep 2026",
       "slug": "hyrox-mumbai",
-      "status": "pending",
+      "status": "imminent",
       "title": "Masters\u2019 Union HYROX Mumbai",
       "vivenu_status": "no_vivenu_link"
     },
@@ -2049,5 +2049,5 @@
     }
   ],
   "total_races_on_site": 83,
-  "updated_at": "2026-05-14T10:53:13.764407+00:00"
+  "updated_at": "2026-05-14T11:39:14.814457+00:00"
 }
