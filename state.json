@@ -186,7 +186,7 @@
       "race_date_start_iso": "2026-05-16",
       "race_dates": "16 May 2026 \u2013 17 May 2026",
       "sale_status": "onSale",
-      "sell_end": "2026-05-17T13:00:00.000Z",
+      "sell_end": "2026-05-15T06:00:00.000Z",
       "sell_start": "2026-04-02T04:00:00.000Z",
       "slug": "hyrox-shanghai",
       "status": "on_sale",
@@ -2050,5 +2050,5 @@
     }
   ],
   "total_races_on_site": 83,
-  "updated_at": "2026-05-14T03:13:19.831082+00:00"
+  "updated_at": "2026-05-14T05:23:00.039007+00:00"
 }
