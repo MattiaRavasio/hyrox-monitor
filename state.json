@@ -144,34 +144,6 @@
       "vivenu_url": "https://mexico.hyrox.com/event/smart-fit-hyrox-puebla-season-25-26-baasza"
     },
     {
-      "city_code": "SHA",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-shanghai/",
-      "mens_open_active": true,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": true,
-          "name": "HYROX MEN | Saturday",
-          "price": 105
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "17. May. 2026",
-      "race_date_end_iso": "2026-05-17",
-      "race_date_start": "16. May. 2026",
-      "race_date_start_iso": "2026-05-16",
-      "race_dates": "16 May 2026 \u2013 17 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-15T08:50:00.000Z",
-      "sell_start": "2026-04-02T04:00:00.000Z",
-      "slug": "hyrox-shanghai",
-      "status": "past",
-      "title": "24/7 FITNESS HYROX Shanghai",
-      "vivenu_url": "https://china.hyrox.com/event/hyrox-shanghai-season-25-26-b2fu2u?useEmbed=true"
-    },
-    {
       "city_code": "LYN",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-lyon/",
@@ -2026,6 +1998,6 @@
       "vivenu_status": "no_vivenu_link"
     }
   ],
-  "total_races_on_site": 82,
-  "updated_at": "2026-05-17T22:22:36.886202+00:00"
+  "total_races_on_site": 81,
+  "updated_at": "2026-05-17T23:23:57.833909+00:00"
 }
