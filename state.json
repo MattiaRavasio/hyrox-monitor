@@ -116,28 +116,6 @@
       "vivenu_url": "https://benelux.hyrox.com/event/hyrox-heerenveen-season-25-26-svi13b"
     },
     {
-      "city_code": "ICN",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-incheon/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": false,
-      "mens_open_tickets": [],
-      "on_sale_button": true,
-      "race_date_end": "17. May. 2026",
-      "race_date_end_iso": "2026-05-17",
-      "race_date_start": "15. May. 2026",
-      "race_date_start_iso": "2026-05-15",
-      "race_dates": "15 May 2026 \u2013 17 May 2026",
-      "sale_status": "onSale",
-      "sell_end": "2029-05-18T00:00:00.000Z",
-      "sell_start": "2025-11-27T09:00:00.000Z",
-      "slug": "hyrox-incheon",
-      "status": "on_sale",
-      "title": "AirAsia HYROX Incheon",
-      "vivenu_url": "https://korea.hyrox.com/event/airasia-hyrox-incheon-season-25-26-h48hij?useEmbed=true"
-    },
-    {
       "city_code": "PBC",
       "is_favorite": false,
       "link": "https://hyrox.com/event/smart-fit-hyrox-puebla/",
@@ -2048,6 +2026,6 @@
       "vivenu_status": "no_vivenu_link"
     }
   ],
-  "total_races_on_site": 83,
-  "updated_at": "2026-05-17T16:26:08.429743+00:00"
+  "total_races_on_site": 82,
+  "updated_at": "2026-05-17T17:26:55.697512+00:00"
 }
