@@ -107,11 +107,11 @@
       "race_date_start": "14. May. 2026",
       "race_date_start_iso": "2026-05-14",
       "race_dates": "14 May 2026 \u2013 17 May 2026",
-      "sale_status": "onSale",
+      "sale_status": "past",
       "sell_end": "2026-05-17T21:00:00.000Z",
       "sell_start": "2026-02-12T13:00:00.000Z",
       "slug": "hyrox-heerenveen",
-      "status": "on_sale",
+      "status": "past",
       "title": "HYROX Heerenveen",
       "vivenu_url": "https://benelux.hyrox.com/event/hyrox-heerenveen-season-25-26-svi13b"
     },
@@ -2027,5 +2027,5 @@
     }
   ],
   "total_races_on_site": 82,
-  "updated_at": "2026-05-17T20:21:46.178302+00:00"
+  "updated_at": "2026-05-17T21:23:19.325876+00:00"
 }
