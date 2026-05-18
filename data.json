@@ -5,17 +5,43 @@
       "city_code": "LYN",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-lyon/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": false,
+          "name": "HYROX MEN |\u00a0Wednesday ",
+          "price": 114
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN |\u00a0Thursday",
+          "price": 114
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN |\u00a0Friday",
+          "price": 114
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday",
+          "price": 114
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "24. May. 2026",
       "race_date_end_iso": "2026-05-24",
       "race_date_start": "20. May. 2026",
       "race_date_start_iso": "2026-05-20",
       "race_dates": "20 May 2026 \u2013 24 May 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-24T21:59:00.000Z",
+      "sell_start": "2025-12-11T13:00:00.000Z",
       "slug": "hyrox-lyon",
-      "status": "imminent",
+      "status": "on_sale",
       "title": "Creapure\u00ae HYROX Lyon",
-      "vivenu_status": "vivenu_fetch_failed: 404 Client Error: Not Found for url: https://france.hyrox.com/event/creapure-hyrox-lyon-season-25-26-oyl0i6?useEmbed=true",
       "vivenu_url": "https://france.hyrox.com/event/creapure-hyrox-lyon-season-25-26-oyl0i6?useEmbed=true"
     },
     {
@@ -1831,5 +1857,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-18T15:11:00.911499+00:00"
+  "updated_at": "2026-05-18T17:03:59.453121+00:00"
 }
