@@ -2,72 +2,6 @@
   "favorites_count": 7,
   "races": [
     {
-      "city_code": "YOW",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-ottawa/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday",
-          "price": 175
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Friday",
-          "price": 175
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Thursday",
-          "price": 175
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "17. May. 2026",
-      "race_date_end_iso": "2026-05-17",
-      "race_date_start": "14. May. 2026",
-      "race_date_start_iso": "2026-05-14",
-      "race_dates": "14 May 2026 \u2013 17 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-18T03:59:00.000Z",
-      "sell_start": "2025-12-18T19:00:00.000Z",
-      "slug": "hyrox-ottawa",
-      "status": "past",
-      "title": "GoodLife HYROX Ottawa",
-      "vivenu_url": "https://ca.hyrox.com/event/hyrox-ottawa-season-25-26-0lc9l7?useEmbed=true"
-    },
-    {
-      "city_code": "PBC",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/smart-fit-hyrox-puebla/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday",
-          "price": 2499
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "17. May. 2026",
-      "race_date_end_iso": "2026-05-17",
-      "race_date_start": "16. May. 2026",
-      "race_date_start_iso": "2026-05-16",
-      "race_dates": "16 May 2026 \u2013 17 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-18T05:59:00.000Z",
-      "sell_start": "2026-02-06T18:00:00.000Z",
-      "slug": "smart-fit-hyrox-puebla",
-      "status": "past",
-      "title": "HYROX Puebla",
-      "vivenu_url": "https://mexico.hyrox.com/event/smart-fit-hyrox-puebla-season-25-26-baasza"
-    },
-    {
       "city_code": "LYN",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-lyon/",
@@ -836,9 +770,9 @@
       "on_sale_button": true,
       "race_date_end": "20. Sep. 2026",
       "race_date_end_iso": "2026-09-20",
-      "race_date_start": "18. Sep. 2026",
-      "race_date_start_iso": "2026-09-18",
-      "race_dates": "18 Sep 2026 \u2013 20 Sep 2026",
+      "race_date_start": "17. Sep. 2026",
+      "race_date_start_iso": "2026-09-17",
+      "race_dates": "17 Sep 2026 \u2013 20 Sep 2026",
       "slug": "hyrox-mumbai",
       "status": "imminent",
       "title": "Masters\u2019 Union HYROX Mumbai",
@@ -1922,6 +1856,6 @@
       "vivenu_status": "no_vivenu_link"
     }
   ],
-  "total_races_on_site": 79,
-  "updated_at": "2026-05-18T09:20:39.056970+00:00"
+  "total_races_on_site": 77,
+  "updated_at": "2026-05-18T11:25:40.143759+00:00"
 }
