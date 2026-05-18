@@ -31,89 +31,13 @@
       "race_date_start": "14. May. 2026",
       "race_date_start_iso": "2026-05-14",
       "race_dates": "14 May 2026 \u2013 17 May 2026",
-      "sale_status": "onSale",
+      "sale_status": "past",
       "sell_end": "2026-05-18T03:59:00.000Z",
       "sell_start": "2025-12-18T19:00:00.000Z",
       "slug": "hyrox-ottawa",
-      "status": "on_sale",
+      "status": "past",
       "title": "GoodLife HYROX Ottawa",
       "vivenu_url": "https://ca.hyrox.com/event/hyrox-ottawa-season-25-26-0lc9l7?useEmbed=true"
-    },
-    {
-      "city_code": "BCN",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-barcelona/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": false,
-          "name": "HYROX MEN | Thursday",
-          "price": 130
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday",
-          "price": 130
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Friday",
-          "price": 130
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "17. May. 2026",
-      "race_date_end_iso": "2026-05-17",
-      "race_date_start": "14. May. 2026",
-      "race_date_start_iso": "2026-05-14",
-      "race_dates": "14 May 2026 \u2013 17 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-17T16:00:00.000Z",
-      "sell_start": "2025-11-21T13:00:00.000Z",
-      "slug": "hyrox-barcelona",
-      "status": "past",
-      "title": "Bioterm HYROX Barcelona",
-      "vivenu_url": "https://spain.hyrox.com/event/hyrox-barcelona-season-25-26-copy-9tiy2w?useEmbed=true"
-    },
-    {
-      "city_code": "HEE",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-heerenveen/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": false,
-          "name": "HYROX MEN | Thursday",
-          "price": 120
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday",
-          "price": 120
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Friday",
-          "price": 120
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "17. May. 2026",
-      "race_date_end_iso": "2026-05-17",
-      "race_date_start": "14. May. 2026",
-      "race_date_start_iso": "2026-05-14",
-      "race_dates": "14 May 2026 \u2013 17 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-17T21:00:00.000Z",
-      "sell_start": "2026-02-12T13:00:00.000Z",
-      "slug": "hyrox-heerenveen",
-      "status": "past",
-      "title": "HYROX Heerenveen",
-      "vivenu_url": "https://benelux.hyrox.com/event/hyrox-heerenveen-season-25-26-svi13b"
     },
     {
       "city_code": "PBC",
@@ -1998,6 +1922,6 @@
       "vivenu_status": "no_vivenu_link"
     }
   ],
-  "total_races_on_site": 81,
-  "updated_at": "2026-05-18T03:16:18.325450+00:00"
+  "total_races_on_site": 79,
+  "updated_at": "2026-05-18T05:29:22.396271+00:00"
 }
