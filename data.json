@@ -59,11 +59,11 @@
       "race_date_start": "16. May. 2026",
       "race_date_start_iso": "2026-05-16",
       "race_dates": "16 May 2026 \u2013 17 May 2026",
-      "sale_status": "onSale",
+      "sale_status": "past",
       "sell_end": "2026-05-18T05:59:00.000Z",
       "sell_start": "2026-02-06T18:00:00.000Z",
       "slug": "smart-fit-hyrox-puebla",
-      "status": "on_sale",
+      "status": "past",
       "title": "HYROX Puebla",
       "vivenu_url": "https://mexico.hyrox.com/event/smart-fit-hyrox-puebla-season-25-26-baasza"
     },
@@ -1923,5 +1923,5 @@
     }
   ],
   "total_races_on_site": 79,
-  "updated_at": "2026-05-18T05:29:22.396271+00:00"
+  "updated_at": "2026-05-18T07:32:49.445045+00:00"
 }
