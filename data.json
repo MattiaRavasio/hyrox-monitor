@@ -318,11 +318,11 @@
       "race_date_start": "18. Jun. 2026",
       "race_date_start_iso": "2026-06-18",
       "race_dates": "18 Jun 2026 \u2013 21 Jun 2026",
-      "sale_status": "soldOut",
+      "sale_status": "onSale",
       "sell_end": "2026-06-21T21:59:00.000Z",
       "sell_start": "2025-10-07T10:00:00.000Z",
       "slug": "puma-hyrox-world-championships-stockholm",
-      "status": "sold_out",
+      "status": "on_sale",
       "title": "PUMA HYROX World Championships Stockholm",
       "vivenu_url": "https://worlds.hyrox.com/event/686b7ae3af7b811eb7649df9"
     },
@@ -1857,5 +1857,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-19T07:22:16.427968+00:00"
+  "updated_at": "2026-05-19T09:17:44.059990+00:00"
 }
