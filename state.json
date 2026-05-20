@@ -48,8 +48,8 @@
       "city_code": "BER",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-berlin/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -68,17 +68,17 @@
           "price": 124
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Thursday, 28 May 2026",
           "price": 124
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Friday, 29 May 2026",
           "price": 124
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday, 30 May 2026",
           "price": 124
         }
@@ -1857,5 +1857,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-20T07:22:12.947553+00:00"
+  "updated_at": "2026-05-20T09:15:48.838584+00:00"
 }
