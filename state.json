@@ -555,17 +555,29 @@
       "city_code": "CPT",
       "is_favorite": false,
       "link": "https://hyrox.com/event/virgin-active-hyrox-cape-town-26-27/",
-      "mens_open_buyable": false,
-      "on_sale_button": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 1500
+        }
+      ],
+      "on_sale_button": true,
       "race_date_end": "15. Aug. 2026",
       "race_date_end_iso": "2026-08-15",
       "race_date_start": "14. Aug. 2026",
       "race_date_start_iso": "2026-08-14",
       "race_dates": "14 Aug 2026 \u2013 15 Aug 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-08-15T20:59:00.000Z",
+      "sell_start": "2026-05-20T11:00:00.000Z",
       "slug": "virgin-active-hyrox-cape-town-26-27",
-      "status": "pending",
+      "status": "on_sale",
       "title": "Virgin Active HYROX Cape Town | Season 26/27",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://sa.hyrox.com/event/hyrox-cape-town-season-26-27-hw50ta?useEmbed=true"
     },
     {
       "city_code": "SZX",
@@ -1287,19 +1299,77 @@
     },
     {
       "city_code": "BIR",
+      "drops_in_days": 2,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-birmingham/",
+      "mens_open_active": true,
       "mens_open_buyable": false,
-      "on_sale_button": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Tuesday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Tuesday",
+          "price": 80
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Wednesday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday",
+          "price": 80
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday",
+          "price": 80
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Friday",
+          "price": 80
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 125
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Saturday",
+          "price": 80
+        }
+      ],
+      "on_sale_button": true,
       "race_date_end": "1. Nov. 2026",
       "race_date_end_iso": "2026-11-01",
       "race_date_start": "27. Oct. 2026",
       "race_date_start_iso": "2026-10-27",
       "race_dates": "27 Oct 2026 \u2013 1 Nov 2026",
+      "sale_status": "planned",
+      "sell_end": "2026-11-01T23:59:00.000Z",
+      "sell_start": "2026-05-22T12:00:00.000Z",
       "slug": "hyrox-birmingham",
-      "status": "pending",
+      "status": "planned",
       "title": "HYROX Birmingham",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://gb.hyrox.com/event/hyrox-birmingham-season-26-27-6o7y1v?useEmbed=true"
     },
     {
       "city_code": "HAM",
@@ -1390,19 +1460,26 @@
     },
     {
       "city_code": "BIR",
+      "drops_in_days": 2,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-birmingham/",
+      "mens_open_active": false,
       "mens_open_buyable": false,
-      "on_sale_button": false,
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
+      "on_sale_button": true,
       "race_date_end": "1. Nov. 2026",
       "race_date_end_iso": "2026-11-01",
       "race_date_start": "31. Oct. 2026",
       "race_date_start_iso": "2026-10-31",
       "race_dates": "31 Oct 2026 \u2013 1 Nov 2026",
+      "sale_status": "planned",
+      "sell_end": "2026-09-20T22:59:00.000Z",
+      "sell_start": "2026-05-22T12:00:00.000Z",
       "slug": "hyrox-youngstars-birmingham",
-      "status": "pending",
+      "status": "planned",
       "title": "HYROX Youngstars Birmingham",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://gb.hyrox.com/event/hyrox-youngstars-birmingham-season-26-27-nf91xr?useEmbed=true"
     },
     {
       "city_code": "DUB",
@@ -1857,5 +1934,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-20T09:15:48.838584+00:00"
+  "updated_at": "2026-05-20T11:07:46.479806+00:00"
 }
