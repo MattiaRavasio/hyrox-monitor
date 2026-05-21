@@ -1299,7 +1299,7 @@
     },
     {
       "city_code": "BIR",
-      "drops_in_days": 1,
+      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-birmingham/",
       "mens_open_active": true,
@@ -1460,7 +1460,7 @@
     },
     {
       "city_code": "BIR",
-      "drops_in_days": 1,
+      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-birmingham/",
       "mens_open_active": false,
@@ -1957,5 +1957,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-21T11:10:26.123544+00:00"
+  "updated_at": "2026-05-21T13:16:38.151256+00:00"
 }
