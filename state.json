@@ -1563,7 +1563,7 @@
       "race_dates": "12 Nov 2026 \u2013 15 Nov 2026",
       "sale_status": "planned",
       "sell_end": "2026-11-16T04:59:00.000Z",
-      "sell_start": "2026-05-21T16:00:00.000Z",
+      "sell_start": "2026-05-21T18:00:00.000Z",
       "slug": "hyrox-denver",
       "status": "planned",
       "title": "HYROX Denver",
@@ -1957,5 +1957,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-21T15:12:31.575372+00:00"
+  "updated_at": "2026-05-21T16:59:27.026978+00:00"
 }
