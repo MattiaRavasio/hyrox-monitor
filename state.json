@@ -252,12 +252,12 @@
       "city_code": "JHB",
       "is_favorite": false,
       "link": "https://hyrox.com/event/virgin-active-hyrox-johannesburg-25-26/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday",
           "price": 1500
         }
@@ -1957,5 +1957,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-21T07:26:03.289162+00:00"
+  "updated_at": "2026-05-21T09:15:27.208426+00:00"
 }
