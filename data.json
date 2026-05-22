@@ -1306,7 +1306,7 @@
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Tuesday",
           "price": 125
         },
@@ -1316,17 +1316,17 @@
           "price": 80
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Wednesday",
           "price": 125
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Wednesday",
           "price": 80
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Thursday",
           "price": 125
         },
@@ -1336,22 +1336,22 @@
           "price": 80
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Friday",
           "price": 125
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Friday",
           "price": 80
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday",
           "price": 125
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Saturday",
           "price": 80
         }
@@ -1954,5 +1954,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-22T13:54:06.020629+00:00"
+  "updated_at": "2026-05-22T15:08:21.651487+00:00"
 }
