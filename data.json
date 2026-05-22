@@ -1299,11 +1299,10 @@
     },
     {
       "city_code": "BIR",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-birmingham/",
       "mens_open_active": true,
-      "mens_open_buyable": false,
+      "mens_open_buyable": true,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -1363,11 +1362,11 @@
       "race_date_start": "27. Oct. 2026",
       "race_date_start_iso": "2026-10-27",
       "race_dates": "27 Oct 2026 \u2013 1 Nov 2026",
-      "sale_status": "planned",
+      "sale_status": "onSale",
       "sell_end": "2026-11-01T23:59:00.000Z",
       "sell_start": "2026-05-22T12:00:00.000Z",
       "slug": "hyrox-birmingham",
-      "status": "planned",
+      "status": "on_sale",
       "title": "HYROX Birmingham",
       "vivenu_url": "https://gb.hyrox.com/event/hyrox-birmingham-season-26-27-6o7y1v?useEmbed=true"
     },
@@ -1460,7 +1459,6 @@
     },
     {
       "city_code": "BIR",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-birmingham/",
       "mens_open_active": false,
@@ -1473,11 +1471,11 @@
       "race_date_start": "31. Oct. 2026",
       "race_date_start_iso": "2026-10-31",
       "race_dates": "31 Oct 2026 \u2013 1 Nov 2026",
-      "sale_status": "planned",
+      "sale_status": "onSale",
       "sell_end": "2026-09-20T22:59:00.000Z",
       "sell_start": "2026-05-22T12:00:00.000Z",
       "slug": "hyrox-youngstars-birmingham",
-      "status": "planned",
+      "status": "on_sale",
       "title": "HYROX Youngstars Birmingham",
       "vivenu_url": "https://gb.hyrox.com/event/hyrox-youngstars-birmingham-season-26-27-nf91xr?useEmbed=true"
     },
@@ -1956,5 +1954,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-22T11:06:59.468393+00:00"
+  "updated_at": "2026-05-22T12:57:56.217360+00:00"
 }
