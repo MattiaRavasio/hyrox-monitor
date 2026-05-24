@@ -1301,8 +1301,8 @@
       "city_code": "BIR",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-birmingham/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -1311,7 +1311,7 @@
           "price": 125
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Tuesday",
           "price": 80
         },
@@ -1331,7 +1331,7 @@
           "price": 125
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | CHARITY ENTRY: MACMILLAN CANCER SUPPORT | Thursday",
           "price": 80
         },
@@ -1954,5 +1954,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-24T16:26:58.058302+00:00"
+  "updated_at": "2026-05-24T17:26:03.567451+00:00"
 }
