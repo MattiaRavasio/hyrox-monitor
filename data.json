@@ -36,11 +36,11 @@
       "race_date_start": "20. May. 2026",
       "race_date_start_iso": "2026-05-20",
       "race_dates": "20 May 2026 \u2013 24 May 2026",
-      "sale_status": "onSale",
+      "sale_status": "past",
       "sell_end": "2026-05-24T21:59:00.000Z",
       "sell_start": "2025-12-11T13:00:00.000Z",
       "slug": "hyrox-lyon",
-      "status": "on_sale",
+      "status": "past",
       "title": "Creapure\u00ae HYROX Lyon",
       "vivenu_url": "https://france.hyrox.com/event/creapure-hyrox-lyon-season-25-26-oyl0i6?useEmbed=true"
     },
@@ -165,7 +165,7 @@
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-rimini/",
       "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -190,11 +190,11 @@
       "race_date_start": "28. May. 2026",
       "race_date_start_iso": "2026-05-28",
       "race_dates": "28 May 2026 \u2013 31 May 2026",
-      "sale_status": "onSale",
+      "sale_status": "past",
       "sell_end": "2026-05-24T21:59:00.000Z",
       "sell_start": "2026-02-26T11:00:00.000Z",
       "slug": "hyrox-rimini",
-      "status": "on_sale",
+      "status": "past",
       "title": "HYROX Rimini",
       "vivenu_url": "https://italy.hyrox.com/event/hyrox-rimini-season-25-26-nz1tfa?useEmbed=true"
     },
@@ -1954,5 +1954,5 @@
     }
   ],
   "total_races_on_site": 77,
-  "updated_at": "2026-05-24T21:24:00.596809+00:00"
+  "updated_at": "2026-05-24T22:24:30.580220+00:00"
 }
