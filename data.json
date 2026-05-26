@@ -25,7 +25,7 @@
           "price": 124
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Thursday, 28 May 2026",
           "price": 124
         },
@@ -1941,5 +1941,5 @@
     }
   ],
   "total_races_on_site": 76,
-  "updated_at": "2026-05-26T19:43:26.096301+00:00"
+  "updated_at": "2026-05-26T20:46:05.879888+00:00"
 }
