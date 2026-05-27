@@ -1525,7 +1525,7 @@
     },
     {
       "city_code": "SEL",
-      "drops_in_days": 1,
+      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-seoul/",
       "mens_open_active": false,
@@ -1941,5 +1941,5 @@
     }
   ],
   "total_races_on_site": 76,
-  "updated_at": "2026-05-27T07:35:09.030804+00:00"
+  "updated_at": "2026-05-27T09:16:45.915221+00:00"
 }
