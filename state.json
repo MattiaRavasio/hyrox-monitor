@@ -109,11 +109,11 @@
       "race_date_start": "28. May. 2026",
       "race_date_start_iso": "2026-05-28",
       "race_dates": "28 May 2026 \u2013 7 Jun 2026",
-      "sale_status": "soldOut",
+      "sale_status": "onSale",
       "sell_end": "2026-06-08T21:59:00.000Z",
       "sell_start": "2026-02-19T17:00:00.000Z",
       "slug": "hyrox-new-york",
-      "status": "sold_out",
+      "status": "on_sale",
       "title": "NYU Langone Health HYROX New York",
       "vivenu_url": "https://usa.hyrox.com/event/hyrox-new-york-city-season-25-26-o2vp6v?useEmbed=true"
     },
@@ -1537,13 +1537,12 @@
       "race_date_start": "14. Nov. 2026",
       "race_date_start_iso": "2026-11-14",
       "race_dates": "14 Nov 2026 \u2013 15 Nov 2026",
-      "sale_status": null,
-      "sell_end": null,
-      "sell_start": null,
+      "sale_status": "onSale",
+      "sell_end": "2026-11-15T12:59:00.000Z",
+      "sell_start": "2026-05-28T09:00:00.000Z",
       "slug": "hyrox-seoul",
-      "status": "imminent",
+      "status": "on_sale",
       "title": "AirAsia HYROX Seoul",
-      "vivenu_status": "vivenu_fetch_failed: unsupported format string passed to NoneType.__format__",
       "vivenu_url": "https://korea.hyrox.com/event/hyrox-seoul-season-26-27-vthaza?useEmbed=true"
     },
     {
@@ -1564,11 +1563,10 @@
     },
     {
       "city_code": "PZN",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-poznan/",
       "mens_open_active": true,
-      "mens_open_buyable": false,
+      "mens_open_buyable": true,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -1593,11 +1591,11 @@
       "race_date_start": "20. Nov. 2026",
       "race_date_start_iso": "2026-11-20",
       "race_dates": "20 Nov 2026 \u2013 22 Nov 2026",
-      "sale_status": "planned",
+      "sale_status": "onSale",
       "sell_end": "2026-11-22T22:59:00.000Z",
       "sell_start": "2026-05-28T10:00:00.000Z",
       "slug": "hyrox-poznan",
-      "status": "planned",
+      "status": "on_sale",
       "title": "HYROX POZNA\u0143",
       "vivenu_url": "https://pl.hyrox.com/event/hyrox-pozna-season-26-27-w657yo?useEmbed=true"
     },
@@ -1941,5 +1939,5 @@
     }
   ],
   "total_races_on_site": 76,
-  "updated_at": "2026-05-28T09:23:31.804144+00:00"
+  "updated_at": "2026-05-28T11:19:18.361408+00:00"
 }
