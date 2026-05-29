@@ -1473,17 +1473,44 @@
       "is_favorite": true,
       "label": "Barcelona",
       "link": "https://hyrox.com/event/hyrox-barcelona-2/",
-      "mens_open_buyable": false,
-      "on_sale_button": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 130
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 130
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 130
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Wednesday",
+          "price": 130
+        }
+      ],
+      "on_sale_button": true,
       "race_date_end": "15. Nov. 2026",
       "race_date_end_iso": "2026-11-15",
       "race_date_start": "12. Nov. 2026",
       "race_date_start_iso": "2026-11-12",
       "race_dates": "12 Nov 2026 \u2013 15 Nov 2026",
+      "sale_status": "onSale",
+      "sell_end": "2026-11-15T22:59:00.000Z",
+      "sell_start": "2026-05-28T10:00:00.000Z",
       "slug": "hyrox-barcelona-2",
-      "status": "pending",
+      "status": "on_sale",
       "title": "Leapmotor HYROX Barcelona",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://spain.hyrox.com/event/hyrox-barcelona-season-26-27-s7gdnm?useEmbed=true"
     },
     {
       "city_code": "DEN",
@@ -1939,5 +1966,5 @@
     }
   ],
   "total_races_on_site": 76,
-  "updated_at": "2026-05-29T15:13:00.469426+00:00"
+  "updated_at": "2026-05-29T17:16:34.277458+00:00"
 }
