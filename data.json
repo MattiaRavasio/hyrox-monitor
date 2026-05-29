@@ -632,17 +632,17 @@
       "city_code": "TNF",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-tenerife/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Friday",
           "price": 125
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday",
           "price": 125
         }
@@ -1939,5 +1939,5 @@
     }
   ],
   "total_races_on_site": 76,
-  "updated_at": "2026-05-29T05:33:36.793828+00:00"
+  "updated_at": "2026-05-29T07:28:50.485560+00:00"
 }
