@@ -175,11 +175,11 @@
       "race_date_start": "30. May. 2026",
       "race_date_start_iso": "2026-05-30",
       "race_dates": "30 May 2026 \u2013 31 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-31T05:00:00.000Z",
+      "sale_status": "onSale",
+      "sell_end": "2026-05-31T15:00:00.000Z",
       "sell_start": "2026-01-16T10:00:00.000Z",
       "slug": "hyrox-riga",
-      "status": "past",
+      "status": "on_sale",
       "title": "LEMON GYM HYROX RIGA",
       "vivenu_url": "https://lv.hyrox.com/event/hyrox-riga-season-25-26-vtnqs3?useEmbed=true"
     },
@@ -1966,5 +1966,5 @@
     }
   ],
   "total_races_on_site": 76,
-  "updated_at": "2026-05-31T05:36:57.991525+00:00"
+  "updated_at": "2026-05-31T07:26:14.310763+00:00"
 }
