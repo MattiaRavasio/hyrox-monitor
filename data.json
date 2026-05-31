@@ -46,11 +46,11 @@
       "race_date_start": "22. May. 2026",
       "race_date_start_iso": "2026-05-22",
       "race_dates": "22 May 2026 \u2013 31 May 2026",
-      "sale_status": "onSale",
+      "sale_status": "past",
       "sell_end": "2026-05-31T21:59:00.000Z",
       "sell_start": "2026-02-18T11:00:00.000Z",
       "slug": "hyrox-berlin",
-      "status": "on_sale",
+      "status": "past",
       "title": "GilletteLabs HYROX Berlin",
       "vivenu_url": "https://da.hyrox.com/event/hyrox-berlin-season-26-27-vb8iwl?useEmbed=true"
     },
@@ -225,11 +225,11 @@
       "race_date_start": "30. May. 2026",
       "race_date_start_iso": "2026-05-30",
       "race_dates": "30 May 2026 \u2013 31 May 2026",
-      "sale_status": "soldOut",
+      "sale_status": "past",
       "sell_end": "2026-05-31T21:59:00.000Z",
       "sell_start": "2026-03-18T11:00:00.000Z",
       "slug": "virgin-active-hyrox-johannesburg-25-26",
-      "status": "sold_out",
+      "status": "past",
       "title": "Virgin Active HYROX Johannesburg 25/26",
       "vivenu_url": "https://sa.hyrox.com/event/hyrox-johannesburg-season-25-26-y9gpgc?useEmbed=true"
     },
@@ -1120,7 +1120,7 @@
         {
           "active": true,
           "name": "HYROX MEN | Saturday",
-          "price": 525
+          "price": 550
         }
       ],
       "on_sale_button": true,
@@ -1599,17 +1599,17 @@
         {
           "active": true,
           "name": "HYROX MEN | Friday",
-          "price": 475
+          "price": 500
         },
         {
           "active": true,
           "name": "HYROX MEN | Saturday",
-          "price": 475
+          "price": 500
         },
         {
           "active": false,
           "name": "HYROX MEN | Sunday",
-          "price": 475
+          "price": 500
         }
       ],
       "on_sale_button": true,
@@ -1966,5 +1966,5 @@
     }
   ],
   "total_races_on_site": 76,
-  "updated_at": "2026-05-31T21:25:55.796440+00:00"
+  "updated_at": "2026-05-31T22:26:00.717300+00:00"
 }
