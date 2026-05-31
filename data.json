@@ -156,34 +156,6 @@
       "vivenu_url": "https://italy.hyrox.com/event/hyrox-rimini-season-25-26-nz1tfa?useEmbed=true"
     },
     {
-      "city_code": "RIX",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-riga/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday",
-          "price": 105
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "31. May. 2026",
-      "race_date_end_iso": "2026-05-31",
-      "race_date_start": "30. May. 2026",
-      "race_date_start_iso": "2026-05-30",
-      "race_dates": "30 May 2026 \u2013 31 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-31T15:00:00.000Z",
-      "sell_start": "2026-01-16T10:00:00.000Z",
-      "slug": "hyrox-riga",
-      "status": "past",
-      "title": "LEMON GYM HYROX RIGA",
-      "vivenu_url": "https://lv.hyrox.com/event/hyrox-riga-season-25-26-vtnqs3?useEmbed=true"
-    },
-    {
       "city_code": "BER",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-berlin/",
@@ -1965,6 +1937,6 @@
       "vivenu_status": "no_vivenu_link"
     }
   ],
-  "total_races_on_site": 76,
-  "updated_at": "2026-05-31T22:26:00.717300+00:00"
+  "total_races_on_site": 75,
+  "updated_at": "2026-05-31T23:29:06.470615+00:00"
 }
