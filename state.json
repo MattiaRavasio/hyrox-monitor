@@ -197,11 +197,11 @@
       "race_date_start": "30. May. 2026",
       "race_date_start_iso": "2026-05-30",
       "race_dates": "30 May 2026 \u2013 31 May 2026",
-      "sale_status": "onSale",
+      "sale_status": "past",
       "sell_end": "2026-05-31T18:00:00.000Z",
       "sell_start": "2026-02-18T15:00:00.000Z",
       "slug": "hyrox-youngstars-berlin",
-      "status": "on_sale",
+      "status": "past",
       "title": "HYROX YOUNGSTARS Berlin",
       "vivenu_url": "https://da.hyrox.com/event/hyrox-youngstars-berlin-season-25-26-8e719a"
     },
@@ -1966,5 +1966,5 @@
     }
   ],
   "total_races_on_site": 76,
-  "updated_at": "2026-05-31T17:28:22.091139+00:00"
+  "updated_at": "2026-05-31T18:31:17.162901+00:00"
 }
