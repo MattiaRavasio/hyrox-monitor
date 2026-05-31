@@ -175,11 +175,11 @@
       "race_date_start": "30. May. 2026",
       "race_date_start_iso": "2026-05-30",
       "race_dates": "30 May 2026 \u2013 31 May 2026",
-      "sale_status": "onSale",
+      "sale_status": "past",
       "sell_end": "2026-05-31T15:00:00.000Z",
       "sell_start": "2026-01-16T10:00:00.000Z",
       "slug": "hyrox-riga",
-      "status": "on_sale",
+      "status": "past",
       "title": "LEMON GYM HYROX RIGA",
       "vivenu_url": "https://lv.hyrox.com/event/hyrox-riga-season-25-26-vtnqs3?useEmbed=true"
     },
@@ -1080,17 +1080,17 @@
       "is_favorite": true,
       "label": "Geneva",
       "link": "https://hyrox.com/event/hyrox-geneva/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Friday",
           "price": 129
         },
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday",
           "price": 129
         }
@@ -1966,5 +1966,5 @@
     }
   ],
   "total_races_on_site": 76,
-  "updated_at": "2026-05-31T14:37:56.677317+00:00"
+  "updated_at": "2026-05-31T15:33:00.080619+00:00"
 }
