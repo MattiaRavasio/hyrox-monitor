@@ -2,59 +2,6 @@
   "favorites_count": 7,
   "races": [
     {
-      "city_code": "BER",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-berlin/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": false,
-          "name": "HYROX MEN | Friday, 22 May 2026",
-          "price": 124
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday, 23 May 2026",
-          "price": 124
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Monday, 25 May 2026",
-          "price": 124
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Thursday, 28 May 2026",
-          "price": 124
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Friday, 29 May 2026",
-          "price": 124
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday, 30 May 2026",
-          "price": 124
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "31. May. 2026",
-      "race_date_end_iso": "2026-05-31",
-      "race_date_start": "22. May. 2026",
-      "race_date_start_iso": "2026-05-22",
-      "race_dates": "22 May 2026 \u2013 31 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-31T21:59:00.000Z",
-      "sell_start": "2026-02-18T11:00:00.000Z",
-      "slug": "hyrox-berlin",
-      "status": "past",
-      "title": "GilletteLabs HYROX Berlin",
-      "vivenu_url": "https://da.hyrox.com/event/hyrox-berlin-season-26-27-vb8iwl?useEmbed=true"
-    },
-    {
       "city_code": "NYC",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-new-york/",
@@ -116,94 +63,6 @@
       "status": "sold_out",
       "title": "NYU Langone Health HYROX New York",
       "vivenu_url": "https://usa.hyrox.com/event/hyrox-new-york-city-season-25-26-o2vp6v?useEmbed=true"
-    },
-    {
-      "city_code": "RIM",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-rimini/",
-      "mens_open_active": true,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": true,
-          "name": "HYROX MEN | Thursday",
-          "price": 125
-        },
-        {
-          "active": true,
-          "name": "HYROX MEN | Friday",
-          "price": 125
-        },
-        {
-          "active": true,
-          "name": "HYROX MEN | Saturday",
-          "price": 125
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "31. May. 2026",
-      "race_date_end_iso": "2026-05-31",
-      "race_date_start": "28. May. 2026",
-      "race_date_start_iso": "2026-05-28",
-      "race_dates": "28 May 2026 \u2013 31 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-24T21:59:00.000Z",
-      "sell_start": "2026-02-26T11:00:00.000Z",
-      "slug": "hyrox-rimini",
-      "status": "past",
-      "title": "HYROX Rimini",
-      "vivenu_url": "https://italy.hyrox.com/event/hyrox-rimini-season-25-26-nz1tfa?useEmbed=true"
-    },
-    {
-      "city_code": "BER",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/hyrox-youngstars-berlin/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": false,
-      "mens_open_tickets": [],
-      "on_sale_button": true,
-      "race_date_end": "31. May. 2026",
-      "race_date_end_iso": "2026-05-31",
-      "race_date_start": "30. May. 2026",
-      "race_date_start_iso": "2026-05-30",
-      "race_dates": "30 May 2026 \u2013 31 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-31T18:00:00.000Z",
-      "sell_start": "2026-02-18T15:00:00.000Z",
-      "slug": "hyrox-youngstars-berlin",
-      "status": "past",
-      "title": "HYROX YOUNGSTARS Berlin",
-      "vivenu_url": "https://da.hyrox.com/event/hyrox-youngstars-berlin-season-25-26-8e719a"
-    },
-    {
-      "city_code": "JHB",
-      "is_favorite": false,
-      "link": "https://hyrox.com/event/virgin-active-hyrox-johannesburg-25-26/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday",
-          "price": 1500
-        }
-      ],
-      "on_sale_button": true,
-      "race_date_end": "31. May. 2026",
-      "race_date_end_iso": "2026-05-31",
-      "race_date_start": "30. May. 2026",
-      "race_date_start_iso": "2026-05-30",
-      "race_dates": "30 May 2026 \u2013 31 May 2026",
-      "sale_status": "past",
-      "sell_end": "2026-05-31T21:59:00.000Z",
-      "sell_start": "2026-03-18T11:00:00.000Z",
-      "slug": "virgin-active-hyrox-johannesburg-25-26",
-      "status": "past",
-      "title": "Virgin Active HYROX Johannesburg 25/26",
-      "vivenu_url": "https://sa.hyrox.com/event/hyrox-johannesburg-season-25-26-y9gpgc?useEmbed=true"
     },
     {
       "city_code": "BUE",
@@ -1937,6 +1796,6 @@
       "vivenu_status": "no_vivenu_link"
     }
   ],
-  "total_races_on_site": 75,
-  "updated_at": "2026-06-01T03:17:34.814096+00:00"
+  "total_races_on_site": 71,
+  "updated_at": "2026-06-01T05:44:09.474048+00:00"
 }
