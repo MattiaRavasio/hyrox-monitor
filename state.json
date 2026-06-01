@@ -109,11 +109,11 @@
       "race_date_start": "28. May. 2026",
       "race_date_start_iso": "2026-05-28",
       "race_dates": "28 May 2026 \u2013 7 Jun 2026",
-      "sale_status": "onSale",
+      "sale_status": "soldOut",
       "sell_end": "2026-06-08T21:59:00.000Z",
       "sell_start": "2026-02-19T17:00:00.000Z",
       "slug": "hyrox-new-york",
-      "status": "on_sale",
+      "status": "sold_out",
       "title": "NYU Langone Health HYROX New York",
       "vivenu_url": "https://usa.hyrox.com/event/hyrox-new-york-city-season-25-26-o2vp6v?useEmbed=true"
     },
@@ -1938,5 +1938,5 @@
     }
   ],
   "total_races_on_site": 75,
-  "updated_at": "2026-06-01T01:02:02.643645+00:00"
+  "updated_at": "2026-06-01T03:17:34.814096+00:00"
 }
