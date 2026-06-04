@@ -354,11 +354,11 @@
         }
       ],
       "on_sale_button": true,
-      "race_date_end": "15. Aug. 2026",
-      "race_date_end_iso": "2026-08-15",
+      "race_date_end": "16. Aug. 2026",
+      "race_date_end_iso": "2026-08-16",
       "race_date_start": "14. Aug. 2026",
       "race_date_start_iso": "2026-08-14",
-      "race_dates": "14 Aug 2026 \u2013 15 Aug 2026",
+      "race_dates": "14 Aug 2026 \u2013 16 Aug 2026",
       "sale_status": "onSale",
       "sell_end": "2026-08-15T20:59:00.000Z",
       "sell_start": "2026-05-20T11:00:00.000Z",
@@ -1192,19 +1192,47 @@
     },
     {
       "city_code": "HAM",
+      "drops_in_days": 6,
       "is_favorite": false,
       "link": "https://hyrox.com/event/intersport-hyrox-hamburg/",
+      "mens_open_active": true,
       "mens_open_buyable": false,
-      "on_sale_button": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Wednesday",
+          "price": 119
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 119
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 119
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 119
+        }
+      ],
+      "on_sale_button": true,
       "race_date_end": "1. Nov. 2026",
       "race_date_end_iso": "2026-11-01",
       "race_date_start": "28. Oct. 2026",
       "race_date_start_iso": "2026-10-28",
       "race_dates": "28 Oct 2026 \u2013 1 Nov 2026",
+      "sale_status": "planned",
+      "sell_end": "2026-11-01T22:59:00.000Z",
+      "sell_start": "2026-06-11T10:00:00.000Z",
       "slug": "intersport-hyrox-hamburg",
-      "status": "pending",
+      "status": "planned",
       "title": "INTERSPORT HYROX Hamburg",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://da.hyrox.com/event/hyrox-hamburg-season-26-27-6t7cdp?useEmbed=true"
     },
     {
       "city_code": "NCE",
@@ -1539,11 +1567,10 @@
     },
     {
       "city_code": "SGP",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/aia-hyrox-singapore/",
       "mens_open_active": true,
-      "mens_open_buyable": false,
+      "mens_open_buyable": true,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -1563,11 +1590,11 @@
       "race_date_start": "27. Nov. 2026",
       "race_date_start_iso": "2026-11-27",
       "race_dates": "27 Nov 2026 \u2013 29 Nov 2026",
-      "sale_status": "planned",
+      "sale_status": "onSale",
       "sell_end": "2026-11-29T15:59:00.000Z",
       "sell_start": "2026-06-04T10:00:00.000Z",
       "slug": "aia-hyrox-singapore",
-      "status": "planned",
+      "status": "on_sale",
       "title": "AIA HYROX Singapore",
       "vivenu_url": "https://singapore.hyrox.com/event/hyrox-singapore-ii-season-26-27-j5w6t2?useEmbed=true"
     },
@@ -1847,5 +1874,5 @@
     }
   ],
   "total_races_on_site": 73,
-  "updated_at": "2026-06-04T09:26:24.811911+00:00"
+  "updated_at": "2026-06-04T11:09:41.411853+00:00"
 }
