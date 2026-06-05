@@ -360,7 +360,7 @@
       "race_date_start_iso": "2026-08-14",
       "race_dates": "14 Aug 2026 \u2013 16 Aug 2026",
       "sale_status": "onSale",
-      "sell_end": "2026-08-15T20:59:00.000Z",
+      "sell_end": "2026-08-16T20:59:00.000Z",
       "sell_start": "2026-05-20T11:00:00.000Z",
       "slug": "virgin-active-hyrox-cape-town-26-27",
       "status": "on_sale",
@@ -1197,7 +1197,7 @@
     },
     {
       "city_code": "HAM",
-      "drops_in_days": 6,
+      "drops_in_days": 5,
       "is_favorite": false,
       "link": "https://hyrox.com/event/intersport-hyrox-hamburg/",
       "mens_open_active": true,
@@ -1745,7 +1745,7 @@
       "race_dates": null,
       "slug": "intersport-hyrox-stockholm-arena",
       "status": "pending",
-      "title": "Intersport HYROX Stockholm",
+      "title": "INTERSPORT HYROX Stockholm",
       "vivenu_status": "no_vivenu_link"
     },
     {
@@ -1879,5 +1879,5 @@
     }
   ],
   "total_races_on_site": 73,
-  "updated_at": "2026-06-05T09:15:44.446574+00:00"
+  "updated_at": "2026-06-05T11:12:08.412018+00:00"
 }
