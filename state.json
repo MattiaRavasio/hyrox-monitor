@@ -1197,7 +1197,7 @@
     },
     {
       "city_code": "HAM",
-      "drops_in_days": 5,
+      "drops_in_days": 4,
       "is_favorite": false,
       "link": "https://hyrox.com/event/intersport-hyrox-hamburg/",
       "mens_open_active": true,
@@ -1879,5 +1879,5 @@
     }
   ],
   "total_races_on_site": 73,
-  "updated_at": "2026-06-06T09:49:05.536121+00:00"
+  "updated_at": "2026-06-06T10:42:52.777367+00:00"
 }
