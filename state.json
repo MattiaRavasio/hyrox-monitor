@@ -691,12 +691,12 @@
       "city_code": "ROM",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-rome/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": false,
+          "active": true,
           "name": "HYROX MEN | Thursday",
           "price": 125
         },
@@ -1879,5 +1879,5 @@
     }
   ],
   "total_races_on_site": 73,
-  "updated_at": "2026-06-05T23:32:28.221559+00:00"
+  "updated_at": "2026-06-06T00:56:07.705688+00:00"
 }
