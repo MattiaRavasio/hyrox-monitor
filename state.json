@@ -5,12 +5,12 @@
       "city_code": "BUE",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-buenos-aires/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
+      "mens_open_active": false,
+      "mens_open_buyable": false,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
-          "active": true,
+          "active": false,
           "name": "HYROX MEN | Saturday",
           "price": 129
         }
@@ -1571,7 +1571,7 @@
     },
     {
       "city_code": "UTR",
-      "drops_in_days": 3,
+      "drops_in_days": 2,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-utrecht/",
       "mens_open_active": false,
@@ -1836,5 +1836,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-08T11:41:35.472001+00:00"
+  "updated_at": "2026-06-08T13:35:26.354959+00:00"
 }
