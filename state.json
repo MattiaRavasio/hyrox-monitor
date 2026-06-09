@@ -1537,6 +1537,11 @@
           "active": true,
           "name": "HYROX MEN | Saturday",
           "price": 196
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Thursday",
+          "price": 196
         }
       ],
       "on_sale_button": true,
@@ -1836,5 +1841,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-09T01:42:46.456981+00:00"
+  "updated_at": "2026-06-09T03:14:39.180803+00:00"
 }
