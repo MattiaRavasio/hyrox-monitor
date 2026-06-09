@@ -1147,7 +1147,7 @@
     },
     {
       "city_code": "HAM",
-      "drops_in_days": 2,
+      "drops_in_days": 1,
       "is_favorite": false,
       "link": "https://hyrox.com/event/intersport-hyrox-hamburg/",
       "mens_open_active": true,
@@ -1700,11 +1700,11 @@
       "link": "https://hyrox.com/event/intersport-hyrox-stockholm-arena/",
       "mens_open_buyable": false,
       "on_sale_button": false,
-      "race_date_end": null,
-      "race_date_end_iso": null,
-      "race_date_start": null,
-      "race_date_start_iso": null,
-      "race_dates": null,
+      "race_date_end": "13. Dec. 2026",
+      "race_date_end_iso": "2026-12-13",
+      "race_date_start": "10. Dec. 2026",
+      "race_date_start_iso": "2026-12-10",
+      "race_dates": "10 Dec 2026 \u2013 13 Dec 2026",
       "slug": "intersport-hyrox-stockholm-arena",
       "status": "pending",
       "title": "INTERSPORT HYROX Stockholm",
@@ -1841,5 +1841,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-09T09:15:44.220611+00:00"
+  "updated_at": "2026-06-09T11:08:29.515510+00:00"
 }
