@@ -891,7 +891,7 @@
       "slug": "hwpo-hyrox-boston-26-27",
       "status": "on_sale",
       "title": "HWPO HYROX Boston",
-      "vivenu_url": "https://usa.hyrox.com/event/hyrox-boston-season-26-27-bgtmeo"
+      "vivenu_url": "https://usa.hyrox.com/event/hyrox-boston-season-26-27-bgtmeo?useEmbed=true"
     },
     {
       "city_code": "GVA",
@@ -1841,5 +1841,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-09T15:18:28.269084+00:00"
+  "updated_at": "2026-06-09T17:00:34.050582+00:00"
 }
