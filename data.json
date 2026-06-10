@@ -1518,7 +1518,7 @@
     },
     {
       "city_code": "UTR",
-      "drops_in_days": 1,
+      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-utrecht/",
       "mens_open_active": true,
@@ -1616,7 +1616,7 @@
     },
     {
       "city_code": "UTR",
-      "drops_in_days": 1,
+      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-utrecht/",
       "mens_open_active": false,
@@ -1881,5 +1881,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-10T11:20:49.077680+00:00"
+  "updated_at": "2026-06-10T13:18:51.238087+00:00"
 }
