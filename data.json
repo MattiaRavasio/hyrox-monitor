@@ -179,11 +179,10 @@
     },
     {
       "city_code": "CTU",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-chengdu/",
       "mens_open_active": true,
-      "mens_open_buyable": false,
+      "mens_open_buyable": true,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -198,11 +197,11 @@
       "race_date_start": "1. Aug. 2026",
       "race_date_start_iso": "2026-08-01",
       "race_dates": "1 Aug 2026 \u2013 2 Aug 2026",
-      "sale_status": "planned",
+      "sale_status": "onSale",
       "sell_end": "2026-08-02T13:00:00.000Z",
       "sell_start": "2026-06-10T04:00:00.000Z",
       "slug": "hyrox-chengdu",
-      "status": "planned",
+      "status": "on_sale",
       "title": "HYROX Chengdu",
       "vivenu_url": "https://china.hyrox.com/event/hyrox-chengdu-season-26-27-copy-2hh7x6?useEmbed=true"
     },
@@ -1841,5 +1840,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-10T03:14:42.865159+00:00"
+  "updated_at": "2026-06-10T05:38:17.195899+00:00"
 }
