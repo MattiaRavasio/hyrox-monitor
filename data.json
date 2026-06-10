@@ -459,19 +459,32 @@
     },
     {
       "city_code": "ATH",
+      "drops_in_days": 1,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-athens/",
+      "mens_open_active": true,
       "mens_open_buyable": false,
-      "on_sale_button": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 124
+        }
+      ],
+      "on_sale_button": true,
       "race_date_end": "6. Sep. 2026",
       "race_date_end_iso": "2026-09-06",
       "race_date_start": "5. Sep. 2026",
       "race_date_start_iso": "2026-09-05",
       "race_dates": "5 Sep 2026 \u2013 6 Sep 2026",
+      "sale_status": "planned",
+      "sell_end": "2026-09-06T21:59:00.000Z",
+      "sell_start": "2026-06-12T11:00:00.000Z",
       "slug": "hyrox-athens",
-      "status": "pending",
+      "status": "planned",
       "title": "HYROX Athens",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://greece.hyrox.com/event/hyrox-athens-season-26-27-dzex9l?useEmbed=true"
     },
     {
       "city_code": "PEK",
@@ -625,14 +638,14 @@
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-izmir/",
       "mens_open_buyable": false,
-      "on_sale_button": false,
+      "on_sale_button": true,
       "race_date_end": "20. Sep. 2026",
       "race_date_end_iso": "2026-09-20",
       "race_date_start": "19. Sep. 2026",
       "race_date_start_iso": "2026-09-19",
       "race_dates": "19 Sep 2026 \u2013 20 Sep 2026",
       "slug": "hyrox-izmir",
-      "status": "pending",
+      "status": "imminent",
       "title": "HYROX \u0130zmir",
       "vivenu_status": "no_vivenu_link"
     },
@@ -1146,7 +1159,7 @@
     },
     {
       "city_code": "HAM",
-      "drops_in_days": 1,
+      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/intersport-hyrox-hamburg/",
       "mens_open_active": true,
@@ -1505,19 +1518,47 @@
     },
     {
       "city_code": "UTR",
+      "drops_in_days": 1,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-utrecht/",
+      "mens_open_active": true,
       "mens_open_buyable": false,
-      "on_sale_button": false,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 120
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday",
+          "price": 120
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 120
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Monday",
+          "price": 120
+        }
+      ],
+      "on_sale_button": true,
       "race_date_end": "30. Nov. 2026",
       "race_date_end_iso": "2026-11-30",
       "race_date_start": "26. Nov. 2026",
       "race_date_start_iso": "2026-11-26",
       "race_dates": "26 Nov 2026 \u2013 30 Nov 2026",
+      "sale_status": "planned",
+      "sell_end": "2026-11-30T22:59:00.000Z",
+      "sell_start": "2026-06-11T12:00:00.000Z",
       "slug": "hyrox-utrecht",
-      "status": "pending",
+      "status": "planned",
       "title": "HYROX Utrecht",
-      "vivenu_status": "no_vivenu_link"
+      "vivenu_url": "https://benelux.hyrox.com/event/hyrox-utrecht-season-26-27-0nj6h0"
     },
     {
       "city_code": "SGP",
@@ -1840,5 +1881,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-10T09:21:20.687078+00:00"
+  "updated_at": "2026-06-10T11:20:49.077680+00:00"
 }
