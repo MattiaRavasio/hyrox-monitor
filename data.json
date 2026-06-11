@@ -795,38 +795,23 @@
       "city_code": "KAR",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-karlsruhe/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": true,
-          "name": "HYROX MEN | Thursday",
-          "price": 114
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Friday",
-          "price": 114
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Saturday",
-          "price": 114
-        }
-      ],
+      "mens_open_active": false,
+      "mens_open_buyable": false,
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "4. Oct. 2026",
       "race_date_end_iso": "2026-10-04",
       "race_date_start": "1. Oct. 2026",
       "race_date_start_iso": "2026-10-01",
       "race_dates": "1 Oct 2026 \u2013 4 Oct 2026",
-      "sale_status": "onSale",
-      "sell_end": "2026-10-04T21:59:00.000Z",
-      "sell_start": "2026-04-29T10:00:00.000Z",
+      "sale_status": null,
+      "sell_end": null,
+      "sell_start": null,
       "slug": "hyrox-karlsruhe",
-      "status": "on_sale",
+      "status": "imminent",
       "title": "HYROX Karlsruhe",
+      "vivenu_status": "vivenu_fetch_failed: unsupported format string passed to NoneType.__format__",
       "vivenu_url": "https://da.hyrox.com/event/hyrox-karlsruhe-season-26-27-5pqd3h?useEmbed=true"
     },
     {
@@ -1159,46 +1144,25 @@
     },
     {
       "city_code": "HAM",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/intersport-hyrox-hamburg/",
-      "mens_open_active": true,
+      "mens_open_active": false,
       "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": true,
-          "name": "HYROX MEN | Wednesday",
-          "price": 119
-        },
-        {
-          "active": true,
-          "name": "HYROX MEN | Thursday",
-          "price": 119
-        },
-        {
-          "active": true,
-          "name": "HYROX MEN | Friday",
-          "price": 119
-        },
-        {
-          "active": true,
-          "name": "HYROX MEN | Saturday",
-          "price": 119
-        }
-      ],
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "1. Nov. 2026",
       "race_date_end_iso": "2026-11-01",
       "race_date_start": "28. Oct. 2026",
       "race_date_start_iso": "2026-10-28",
       "race_dates": "28 Oct 2026 \u2013 1 Nov 2026",
-      "sale_status": "planned",
-      "sell_end": "2026-11-01T22:59:00.000Z",
-      "sell_start": "2026-06-11T10:00:00.000Z",
+      "sale_status": null,
+      "sell_end": null,
+      "sell_start": null,
       "slug": "intersport-hyrox-hamburg",
-      "status": "planned",
+      "status": "imminent",
       "title": "INTERSPORT HYROX Hamburg",
+      "vivenu_status": "vivenu_fetch_failed: unsupported format string passed to NoneType.__format__",
       "vivenu_url": "https://da.hyrox.com/event/hyrox-hamburg-season-26-27-6t7cdp?useEmbed=true"
     },
     {
@@ -1909,5 +1873,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-11T07:50:13.166608+00:00"
+  "updated_at": "2026-06-11T09:37:01.295492+00:00"
 }
