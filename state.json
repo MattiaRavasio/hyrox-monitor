@@ -459,7 +459,7 @@
     },
     {
       "city_code": "ATH",
-      "drops_in_days": 1,
+      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-athens/",
       "mens_open_active": true,
@@ -506,38 +506,23 @@
       "city_code": "MAA",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-maastricht/",
-      "mens_open_active": true,
-      "mens_open_buyable": true,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": true,
-          "name": "HYROX MEN | Thursday",
-          "price": 120
-        },
-        {
-          "active": true,
-          "name": "HYROX MEN | Friday",
-          "price": 120
-        },
-        {
-          "active": true,
-          "name": "HYROX MEN | Saturday",
-          "price": 120
-        }
-      ],
+      "mens_open_active": false,
+      "mens_open_buyable": false,
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "20. Sep. 2026",
       "race_date_end_iso": "2026-09-20",
       "race_date_start": "17. Sep. 2026",
       "race_date_start_iso": "2026-09-17",
       "race_dates": "17 Sep 2026 \u2013 20 Sep 2026",
-      "sale_status": "onSale",
-      "sell_end": "2026-09-20T21:59:00.000Z",
-      "sell_start": "2026-04-09T12:00:00.000Z",
+      "sale_status": null,
+      "sell_end": null,
+      "sell_start": null,
       "slug": "hyrox-maastricht",
-      "status": "on_sale",
+      "status": "imminent",
       "title": "HYROX Maastricht",
+      "vivenu_status": "vivenu_fetch_failed: unsupported format string passed to NoneType.__format__",
       "vivenu_url": "https://benelux.hyrox.com/event/hyrox-maastricht-season-26-27-4wsn6z"
     },
     {
@@ -603,12 +588,13 @@
       "race_date_start": "19. Sep. 2026",
       "race_date_start_iso": "2026-09-19",
       "race_dates": "19 Sep 2026 \u2013 20 Sep 2026",
-      "sale_status": "onSale",
-      "sell_end": "2026-09-20T21:59:00.000Z",
-      "sell_start": "2026-04-09T14:00:00.000Z",
+      "sale_status": null,
+      "sell_end": null,
+      "sell_start": null,
       "slug": "hyrox-youngstars-maastricht",
-      "status": "on_sale",
+      "status": "imminent",
       "title": "HYROX Youngstars Maastricht",
+      "vivenu_status": "vivenu_fetch_failed: unsupported format string passed to NoneType.__format__",
       "vivenu_url": "https://benelux.hyrox.com/event/hyrox-youngstars-maastricht-season-26-27-pzkl9i?useEmbed=true"
     },
     {
@@ -795,23 +781,38 @@
       "city_code": "KAR",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-karlsruhe/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": false,
-      "mens_open_tickets": [],
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 114
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Friday",
+          "price": 114
+        },
+        {
+          "active": false,
+          "name": "HYROX MEN | Saturday",
+          "price": 114
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "4. Oct. 2026",
       "race_date_end_iso": "2026-10-04",
       "race_date_start": "1. Oct. 2026",
       "race_date_start_iso": "2026-10-01",
       "race_dates": "1 Oct 2026 \u2013 4 Oct 2026",
-      "sale_status": null,
-      "sell_end": null,
-      "sell_start": null,
+      "sale_status": "onSale",
+      "sell_end": "2026-10-04T21:59:00.000Z",
+      "sell_start": "2026-04-29T10:00:00.000Z",
       "slug": "hyrox-karlsruhe",
-      "status": "imminent",
+      "status": "on_sale",
       "title": "HYROX Karlsruhe",
-      "vivenu_status": "vivenu_fetch_failed: unsupported format string passed to NoneType.__format__",
       "vivenu_url": "https://da.hyrox.com/event/hyrox-karlsruhe-season-26-27-5pqd3h?useEmbed=true"
     },
     {
@@ -1146,23 +1147,43 @@
       "city_code": "HAM",
       "is_favorite": false,
       "link": "https://hyrox.com/event/intersport-hyrox-hamburg/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
-      "mens_open_exists": false,
-      "mens_open_tickets": [],
+      "mens_open_active": true,
+      "mens_open_buyable": true,
+      "mens_open_exists": true,
+      "mens_open_tickets": [
+        {
+          "active": true,
+          "name": "HYROX MEN | Wednesday",
+          "price": 119
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Thursday",
+          "price": 119
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Friday",
+          "price": 119
+        },
+        {
+          "active": true,
+          "name": "HYROX MEN | Saturday",
+          "price": 119
+        }
+      ],
       "on_sale_button": true,
       "race_date_end": "1. Nov. 2026",
       "race_date_end_iso": "2026-11-01",
       "race_date_start": "28. Oct. 2026",
       "race_date_start_iso": "2026-10-28",
       "race_dates": "28 Oct 2026 \u2013 1 Nov 2026",
-      "sale_status": null,
-      "sell_end": null,
-      "sell_start": null,
+      "sale_status": "onSale",
+      "sell_end": "2026-11-01T22:59:00.000Z",
+      "sell_start": "2026-06-11T10:00:00.000Z",
       "slug": "intersport-hyrox-hamburg",
-      "status": "imminent",
+      "status": "on_sale",
       "title": "INTERSPORT HYROX Hamburg",
-      "vivenu_status": "vivenu_fetch_failed: unsupported format string passed to NoneType.__format__",
       "vivenu_url": "https://da.hyrox.com/event/hyrox-hamburg-season-26-27-6t7cdp?useEmbed=true"
     },
     {
@@ -1510,46 +1531,25 @@
     },
     {
       "city_code": "UTR",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-utrecht/",
-      "mens_open_active": true,
+      "mens_open_active": false,
       "mens_open_buyable": false,
-      "mens_open_exists": true,
-      "mens_open_tickets": [
-        {
-          "active": true,
-          "name": "HYROX MEN | Thursday",
-          "price": 120
-        },
-        {
-          "active": false,
-          "name": "HYROX MEN | Friday",
-          "price": 120
-        },
-        {
-          "active": true,
-          "name": "HYROX MEN | Saturday",
-          "price": 120
-        },
-        {
-          "active": true,
-          "name": "HYROX MEN | Monday",
-          "price": 120
-        }
-      ],
+      "mens_open_exists": false,
+      "mens_open_tickets": [],
       "on_sale_button": true,
       "race_date_end": "30. Nov. 2026",
       "race_date_end_iso": "2026-11-30",
       "race_date_start": "26. Nov. 2026",
       "race_date_start_iso": "2026-11-26",
       "race_dates": "26 Nov 2026 \u2013 30 Nov 2026",
-      "sale_status": "planned",
-      "sell_end": "2026-11-30T22:59:00.000Z",
-      "sell_start": "2026-06-11T12:00:00.000Z",
+      "sale_status": null,
+      "sell_end": null,
+      "sell_start": null,
       "slug": "hyrox-utrecht",
-      "status": "planned",
+      "status": "imminent",
       "title": "HYROX Utrecht",
+      "vivenu_status": "vivenu_fetch_failed: unsupported format string passed to NoneType.__format__",
       "vivenu_url": "https://benelux.hyrox.com/event/hyrox-utrecht-season-26-27-0nj6h0"
     },
     {
@@ -1608,7 +1608,6 @@
     },
     {
       "city_code": "UTR",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-youngstars-utrecht/",
       "mens_open_active": false,
@@ -1621,12 +1620,13 @@
       "race_date_start": "28. Nov. 2026",
       "race_date_start_iso": "2026-11-28",
       "race_dates": "28 Nov 2026 \u2013 29 Nov 2026",
-      "sale_status": "planned",
-      "sell_end": "2026-11-29T22:59:00.000Z",
-      "sell_start": "2026-06-11T12:00:00.000Z",
+      "sale_status": null,
+      "sell_end": null,
+      "sell_start": null,
       "slug": "hyrox-youngstars-utrecht",
-      "status": "planned",
+      "status": "imminent",
       "title": "HYROX Youngstars Utrecht",
+      "vivenu_status": "vivenu_fetch_failed: unsupported format string passed to NoneType.__format__",
       "vivenu_url": "https://benelux.hyrox.com/event/hyrox-youngstars-utrecht-season-26-27-wh3w1v?useEmbed=true"
     },
     {
@@ -1873,5 +1873,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-11T09:37:01.295492+00:00"
+  "updated_at": "2026-06-11T11:38:22.705337+00:00"
 }
