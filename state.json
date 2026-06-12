@@ -459,11 +459,10 @@
     },
     {
       "city_code": "ATH",
-      "drops_in_days": 0,
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-athens/",
       "mens_open_active": true,
-      "mens_open_buyable": false,
+      "mens_open_buyable": true,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -478,11 +477,11 @@
       "race_date_start": "5. Sep. 2026",
       "race_date_start_iso": "2026-09-05",
       "race_dates": "5 Sep 2026 \u2013 6 Sep 2026",
-      "sale_status": "planned",
+      "sale_status": "onSale",
       "sell_end": "2026-09-06T21:59:00.000Z",
       "sell_start": "2026-06-12T11:00:00.000Z",
       "slug": "hyrox-athens",
-      "status": "planned",
+      "status": "on_sale",
       "title": "HYROX Athens",
       "vivenu_url": "https://greece.hyrox.com/event/hyrox-athens-season-26-27-dzex9l?useEmbed=true"
     },
@@ -653,8 +652,8 @@
       "city_code": "ROM",
       "is_favorite": false,
       "link": "https://hyrox.com/event/hyrox-rome/",
-      "mens_open_active": false,
-      "mens_open_buyable": false,
+      "mens_open_active": true,
+      "mens_open_buyable": true,
       "mens_open_exists": true,
       "mens_open_tickets": [
         {
@@ -673,7 +672,7 @@
           "price": 125
         },
         {
-          "active": false,
+          "active": true,
           "name": "HYROX MEN | Wednesday",
           "price": 125
         }
@@ -1905,5 +1904,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-12T09:31:21.411032+00:00"
+  "updated_at": "2026-06-12T11:21:52.224995+00:00"
 }
