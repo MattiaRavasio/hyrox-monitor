@@ -1759,7 +1759,7 @@
     },
     {
       "city_code": "STO",
-      "drops_in_days": 4,
+      "drops_in_days": 3,
       "is_favorite": false,
       "link": "https://hyrox.com/event/intersport-hyrox-stockholm-arena/",
       "mens_open_active": true,
@@ -1927,5 +1927,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-13T09:10:56.470240+00:00"
+  "updated_at": "2026-06-13T10:52:53.016036+00:00"
 }
