@@ -21,11 +21,11 @@
       "race_date_start": "13. Jun. 2026",
       "race_date_start_iso": "2026-06-13",
       "race_dates": "13. Jun. 2026",
-      "sale_status": "onSale",
+      "sale_status": "past",
       "sell_end": "2026-06-14T01:59:00.000Z",
       "sell_start": "2026-04-02T15:00:00.000Z",
       "slug": "hyrox-buenos-aires",
-      "status": "on_sale",
+      "status": "past",
       "title": "HYROX Buenos Aires",
       "vivenu_url": "https://ar.hyrox.com/event/hyrox-buenos-aires-season-25-26-taxch8?useEmbed=true"
     },
@@ -1927,5 +1927,5 @@
     }
   ],
   "total_races_on_site": 72,
-  "updated_at": "2026-06-14T01:03:09.102329+00:00"
+  "updated_at": "2026-06-14T03:16:49.350772+00:00"
 }
